@@ -1,0 +1,425 @@
+﻿@model DMMS.Models.ViewModels.Posting
+@* For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860 *@ 
+@{ ViewBag.Title = "Stage One"; Layout = "~/Views/Shared/_Layout.cshtml"; }
+<script src="https://cdn.tiny.cloud/1/hc10v3pdh3splpqobrzoyucjuzid5aee6nh5cyd8beqtk9wf/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+<script>
+    tinymce.init({
+        selector: '#work_content'
+    });
+</script>
+<style>
+    #StageOne, #StageTwo {
+        background-color: #f2f2f2;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    #ButtonRow {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        background-color: #f2f2f2;
+    }
+</style>
+</br>
+<div class="row">
+    <div class="col">
+        CMS Type
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            <option value="1" selected>WordPress</option>
+            <option value="2">Wix</option>
+            <option value="3">Shopify</option>
+            <option value="4">Programmed</option>
+        </select>
+    </div>
+    <div class="col">
+        Website:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name - @item.Url&nbsp;&nbsp;</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name - @item.Url&nbsp;&nbsp;</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Website Type
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            <option value="1" selected>Blog</option>
+            <option value="2">eCommerce</option>
+            <option value="3">Business</option>
+            <option value="4">Portfolio</option>
+        </select>
+    </div>
+    <div class="col">
+        Environment:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            <option value="1">Dev</option>
+            <option value="2">Test</option>
+            <option value="3">UAT</option>
+            <option value="4">Pre Prod</option>
+            <option value="5" selected>Prod / Live</option>
+            @* <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            } *@
+        </select>
+    </div>
+    <div class="col">
+        Content Type:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            <option value="1">Product</option>
+            <option value="2">Blog / Post</option>
+            @* @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            } *@
+        </select>
+    </div>
+    <div class="col">
+        Column 12
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            <option value="1">Product</option>
+            <option value="2">Top</option>
+            <option value="3">VS</option>
+            <option value="4">Best</option>
+            <option value="5">Under</option>
+            <option value="6">Review</option>
+            <option value="7">Pros/cons</option>
+            <!-- optional extra terms (useful for UI or filtering) -->
+            <option value="8">Compare</option>
+            <option value="9">Rating</option>
+            <option value="10">Buyer’s Guide</option>
+        </select>
+    </div>
+    <div class="col">
+        Column 12
+        <select id="dd" class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="col">
+        Column 12
+        <select id="dd" class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="col">
+        Column 12
+        <select id="dd" class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="col">
+        Column 12
+        <select id="dd" class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="col">
+        Column 12
+        <select id="dd" class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="col">
+        Column 12
+        <select id="dd" class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col">
+        Category Level 1:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 2:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 3:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 4:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 5:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 6:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 7:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 8:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 9:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 10:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 11:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 12:
+        <select id="dd" class="form-select">
+            <option value="0">Select</option>
+            @foreach(var item in Model.Websites)
+            {
+                if(item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+</div>
+<br/>
+<div id="ButtonRow" class="row" style="display: flex; justify-content: right;">
+    <button id="toggleButton" type="button" class="btn btn-primary" style="width: 150px; margin: 10px">Go To Next</button>
+</div>
+<div id="StageOne" class="row text-center">
+    <label for="raw_content"><h3>Raw Content:</h3></label>
+    <textarea id="raw_content" name="text" style="width: 98%; min-height: 1500px; padding: 20px;"></textarea>
+</div>
+<div id="StageTwo" class="row">
+    <div class="col">
+        <label for="work_content"><h3>Work Content:</h3></label>
+        <textarea id="work_content" class="form-control" name="text" style="width: 100%; min-height: 1500px;"></textarea>
+    </div>
+    <div class="col">
+        <label for="final_content"><h3>Result Content:</h3></label>
+        <textarea id="final_content" class="form-control" rows="5" name="text" style="width: 100%; min-height: 1500px;"></textarea>
+    </div>
+</div>
+
+<script>
+    const stageOne = document.getElementById("StageOne");
+    const stageTwo = document.getElementById("StageTwo");
+    const toggleButton = document.getElementById("toggleButton");
+
+    // Hide StageTwo, Show StageOne
+    stageTwo.style.display = "none";
+    stageOne.style.display = "block";
+    toggleButton.textContent = "Go To Next";
+
+    toggleButton.addEventListener("click", function () {
+        if (stageOne.style.display !== "none") {
+            // Hide StageOne, Show StageTwo
+            stageOne.style.display = "none";
+            stageTwo.style.display = "flex"; // or "block" if you prefer full width
+            toggleButton.textContent = "Go To Previous";
+        } else {
+            // Hide StageTwo, Show StageOne
+            stageTwo.style.display = "none";
+            stageOne.style.display = "block";
+            toggleButton.textContent = "Go To Next";
+        }
+    });
+</script>

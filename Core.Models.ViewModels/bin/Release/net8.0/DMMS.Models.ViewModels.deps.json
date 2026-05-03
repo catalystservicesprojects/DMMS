@@ -1,0 +1,87 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DMMS.Models.ViewModels/1.0.0": {
+        "dependencies": {
+          "DMMS.Models": "1.0.0",
+          "DMMS.Models.Common": "1.0.0"
+        },
+        "runtime": {
+          "DMMS.Models.ViewModels.dll": {}
+        }
+      },
+      "DMMS.Models/1.0.0": {
+        "dependencies": {
+          "DMMS.Models.Base": "1.0.0",
+          "DMMS.Models.Common": "1.0.0",
+          "DMMS.Utility": "1.0.0"
+        },
+        "runtime": {
+          "DMMS.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DMMS.Models.Base/1.0.0": {
+        "runtime": {
+          "DMMS.Models.Base.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DMMS.Models.Common/1.0.0": {
+        "dependencies": {
+          "DMMS.Models.Base": "1.0.0"
+        },
+        "runtime": {
+          "DMMS.Models.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DMMS.Utility/1.0.0": {
+        "runtime": {
+          "DMMS.Utility.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DMMS.Models.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DMMS.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DMMS.Models.Base/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DMMS.Models.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DMMS.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "DMMS.Models.DTOs/1.0.0": {
+        "runtime": {
+          "DMMS.Models.DTOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DMMS.Models.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

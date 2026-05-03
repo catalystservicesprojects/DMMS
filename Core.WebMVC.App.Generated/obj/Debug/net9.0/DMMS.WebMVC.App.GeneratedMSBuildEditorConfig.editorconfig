@@ -1,0 +1,593 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DMMS.WebMVC.App
+build_property.RootNamespace = DMMS.WebMVC.App
+build_property.ProjectDir = D:\NinadGawankar\Projects\DMMS\Core.WebMVC.App.Generated\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\NinadGawankar\Projects\DMMS\Core.WebMVC.App.Generated
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/CMSType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ01TVHlwZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/CMSType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ01TVHlwZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/CMSType/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ01TVHlwZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/CMSType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ01TVHlwZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/CMSType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ01TVHlwZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Company/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Company/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Company/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Company/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Company/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentCoded/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudENvZGVkXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentCoded/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudENvZGVkXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentCoded/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudENvZGVkXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentCoded/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudENvZGVkXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentCoded/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudENvZGVkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentEdited/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEVkaXRlZFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentEdited/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEVkaXRlZFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentEdited/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEVkaXRlZFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentEdited/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEVkaXRlZFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentEdited/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEVkaXRlZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentGenerated/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEdlbmVyYXRlZFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentGenerated/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEdlbmVyYXRlZFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentGenerated/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEdlbmVyYXRlZFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentGenerated/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEdlbmVyYXRlZFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentGenerated/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudEdlbmVyYXRlZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksAffiliate/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQWZmaWxpYXRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksAffiliate/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQWZmaWxpYXRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksAffiliate/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQWZmaWxpYXRlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksAffiliate/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQWZmaWxpYXRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksAffiliate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQWZmaWxpYXRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksBackLinks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQmFja0xpbmtzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksBackLinks/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQmFja0xpbmtzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksBackLinks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQmFja0xpbmtzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksBackLinks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQmFja0xpbmtzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksBackLinks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzQmFja0xpbmtzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksMedia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzTWVkaWFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksMedia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzTWVkaWFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksMedia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzTWVkaWFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksMedia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzTWVkaWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksMedia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzTWVkaWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksReference/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzUmVmZXJlbmNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksReference/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzUmVmZXJlbmNlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksReference/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzUmVmZXJlbmNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksReference/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzUmVmZXJlbmNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksReference/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzUmVmZXJlbmNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksSocial/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzU29jaWFsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksSocial/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzU29jaWFsXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksSocial/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzU29jaWFsXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksSocial/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzU29jaWFsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentLinksSocial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudExpbmtzU29jaWFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentRaw/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJhd1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentRaw/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJhd1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentRaw/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJhd1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentRaw/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJhd1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentRaw/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJhd1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentResult/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJlc3VsdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentResult/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJlc3VsdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentResult/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJlc3VsdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentResult/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJlc3VsdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentResult/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFJlc3VsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSection/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNlY3Rpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSection/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNlY3Rpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSection/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNlY3Rpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSection/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNlY3Rpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSection/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNlY3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSocial/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNvY2lhbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSocial/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNvY2lhbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSocial/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNvY2lhbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSocial/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNvY2lhbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentSocial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFNvY2lhbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFR5cGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFR5cGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentType/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFR5cGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFR5cGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/ContentType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFR5cGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Content/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Content/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Content/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Content/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Content/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Environment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aXJvbm1lbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Environment/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aXJvbm1lbnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Environment/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aXJvbm1lbnRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Environment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aXJvbm1lbnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Environment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aXJvbm1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordMap/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZE1hcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordMap/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZE1hcFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordMap/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZE1hcFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordMap/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZE1hcFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordMap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZE1hcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordProvider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFByb3ZpZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordProvider/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFByb3ZpZGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordProvider/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFByb3ZpZGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordProvider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFByb3ZpZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordProvider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFByb3ZpZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordTopic/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFRvcGljXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordTopic/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFRvcGljXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordTopic/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFRvcGljXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordTopic/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFRvcGljXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/KeywordTopic/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFRvcGljXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Keyword/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Keyword/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Keyword/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Keyword/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Keyword/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5d29yZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Niche/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmljaGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Niche/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmljaGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Niche/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmljaGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Niche/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmljaGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Niche/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmljaGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Publisher/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Publisher/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Publisher/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Publisher/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Publisher/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVibGlzaGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SellerEntity/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRW50aXR5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SellerEntity/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRW50aXR5XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SellerEntity/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRW50aXR5XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SellerEntity/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRW50aXR5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SellerEntity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRW50aXR5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SocialMediaType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFUeXBlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SocialMediaType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFUeXBlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SocialMediaType/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFUeXBlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SocialMediaType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFUeXBlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/SocialMediaType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFUeXBlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Tag/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Tag/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Tag/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Tag/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/Tag/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/WebsiteType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2Vic2l0ZVR5cGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/WebsiteType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2Vic2l0ZVR5cGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/WebsiteType/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2Vic2l0ZVR5cGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/WebsiteType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2Vic2l0ZVR5cGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/NinadGawankar/Projects/DMMS/Core.WebMVC.App.Generated/Views/WebsiteType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2Vic2l0ZVR5cGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

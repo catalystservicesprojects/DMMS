@@ -1,0 +1,926 @@
+﻿
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name='robots' content='max-image-preview:large' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary Meta Tags -->
+    <title>OShortName</title>
+    <meta name="title" content="OShortName" />
+    <meta name="description" content="ODescription" />
+    <meta name="keywords" content="OPrimaryKeyword" />
+    <meta name="author" content="OAuthor" />
+    <meta name="robots" content="ORobots" />
+    <meta name="language" content="OLanguage" />
+    <meta name="revisit-after" content="ORevisit" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram, Discord, Slack) -->
+    <meta property="og:title" content="OShortName" />
+    <meta property="og:description" content="ODescription" />
+    <meta property="og:image" content="OImageLink" />
+    <meta property="og:url" content="OWordpressSlug" />
+    <meta property="og:url" content="OWebsite" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OShortName" />
+    <meta name="twitter:description" content="ODescription" />
+    <meta name="twitter:image" content="OImageLink" />
+    <meta name="twitter:url" content="OWebsite" />
+
+    <!-- Pinterest -->
+    <meta name="pinterest-rich-pin" content="true" />
+
+    <!-- Additional Recommended -->
+    <meta property="article:author" content="OAuthor" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!----------------------------------------------------------->
+
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel="alternate" type="application/rss+xml" title="uscpl.net &raquo; Feed" href="https://uscpl.net/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="uscpl.net &raquo; Comments Feed" href="https://uscpl.net/comments/feed/" />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://uscpl.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fuscpl.net%2Fpostlayoutclassic%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://uscpl.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fuscpl.net%2Fpostlayoutclassic%2F&#038;format=xml" />
+    <style id='wp-img-auto-sizes-contain-inline-css'>
+        img:is([sizes=auto i],[sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+        /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+    </style>
+
+    <style id='wp-emoji-styles-inline-css'>
+
+        img.wp-smiley, img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+        /*# sourceURL=wp-emoji-styles-inline-css */
+    </style>
+    <style id='classic-theme-styles-inline-css'>
+        /*! This file is auto-generated */
+        /*.wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }*/
+        /*# sourceURL=/wp-includes/css/classic-themes.min.css */
+    </style>
+    <style id='global-styles-inline-css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+            .is-layout-flex > :is(*, div) {
+                margin: 0;
+            }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid > :is(*, div) {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-term-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-term-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+        /*# sourceURL=global-styles-inline-css */
+    </style>
+    <link rel='stylesheet' id='hostinger-reach-subscription-block-css' href='https://uscpl.net/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription.css?ver=1774459695' media='all' />
+    <link rel='stylesheet' id='bloghash-elementor-css' href='https://uscpl.net/wp-content/themes/bloghash/assets/css/compatibility/elementor.min.css?ver=1.0.28' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='https://uscpl.net/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+    <link rel='stylesheet' id='FontAwesome-css' href='https://uscpl.net/wp-content/themes/bloghash/assets/css/all.min.css?ver=5.15.4' media='all' />
+    <!--<link rel='stylesheet' id='bloghash-styles-css' href='https://uscpl.net/wp-content/themes/bloghash/assets/css/style.min.css?ver=1.0.28' media='all' />
+    <link rel='stylesheet' id='bloghash-google-fonts-css' href='//fonts.googleapis.com/css?family=Inter+Tight%3A600%7CBe+Vietnam+Pro%3A400%2C700%2C500%7CPlayfair+Display%3A400%2C400i&#038;display=swap&#038;subsets=latin&#038;ver=1.0.28' media='' />
+    <link rel='stylesheet' id='bloghash-dynamic-styles-css' href='https://uscpl.net/wp-content/uploads/bloghash/dynamic-styles.css?ver=1774175052' media='all' />-->
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://uscpl.net/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.35.9' media='all' />
+    <link rel='stylesheet' id='elementor-post-1681-css' href='https://uscpl.net/wp-content/uploads/elementor/css/post-1681.css?ver=1774642292' media='all' />
+    <link rel='stylesheet' id='elementor-post-1678-css' href='https://uscpl.net/wp-content/uploads/elementor/css/post-1678.css?ver=1774643024' media='all' />
+    <link rel='stylesheet' id='elementor-gf-roboto-css' href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+    <link rel='stylesheet' id='elementor-gf-robotoslab-css' href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+    <script src="https://uscpl.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script src="https://uscpl.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+    <!-- Google tag (gtag.js) snippet added by Site Kit -->
+    <!-- Google Analytics snippet added by Site Kit -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=GT-T9BLN8K4" id="google_gtagjs-js" async></script>
+    <script id="google_gtagjs-js-after">
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+        gtag("set", "linker", { "domains": ["uscpl.net"] });
+        gtag("js", new Date());
+        gtag("set", "developer_id.dZTNiMT", true);
+        gtag("config", "GT-T9BLN8K4", { "googlesitekit_post_type": "page" });
+        window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify({ name, data }); if (!!window._googlesitekit.throttledEvents[key]) { return; } window._googlesitekit.throttledEvents[key] = true; setTimeout(() => { delete window._googlesitekit.throttledEvents[key]; }, 5); gtag("event", name, { ...data, event_source: "site-kit" }); };
+        //# sourceURL=google_gtagjs-js-after
+    </script>
+    <link rel="https://api.w.org/" href="https://uscpl.net/wp-json/" />
+    <link rel="alternate" title="JSON" type="application/json" href="https://uscpl.net/wp-json/wp/v2/pages/1678" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://uscpl.net/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.9.4" />
+    <link rel="canonical" href="https://uscpl.net/postlayoutclassic/" />
+    <link rel='shortlink' href='https://uscpl.net/?p=1678' />
+    <meta name="generator" content="Site Kit by Google 1.175.0" />
+    <meta name="theme-color" content="#cc0052">
+    <!-- Google AdSense meta tags added by Site Kit -->
+    <meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+    <meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+    <!-- End Google AdSense meta tags added by Site Kit -->
+    <meta name="generator" content="Elementor 3.35.9; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <style>
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+            background-image: none !important;
+        }
+
+        @media screen and (max-height: 1024px) {
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+
+        @media screen and (max-height: 640px) {
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://uscpl.net/wp-content/uploads/2026/03/cropped-WhatsApp-Image-2026-03-18-at-10.40.53-PM-1-32x32.jpeg" sizes="32x32" />
+    <link rel="icon" href="https://uscpl.net/wp-content/uploads/2026/03/cropped-WhatsApp-Image-2026-03-18-at-10.40.53-PM-1-192x192.jpeg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://uscpl.net/wp-content/uploads/2026/03/cropped-WhatsApp-Image-2026-03-18-at-10.40.53-PM-1-180x180.jpeg" />
+    <meta name="msapplication-TileImage" content="https://uscpl.net/wp-content/uploads/2026/03/cropped-WhatsApp-Image-2026-03-18-at-10.40.53-PM-1-270x270.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+</head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-1678 wp-custom-logo wp-embed-responsive wp-theme-bloghash bloghash-topbar__separators-regular bloghash-layout__fw-contained bloghash-layout__boxed-separated bloghash-layout-shadow bloghash-header-layout-1 bloghash-menu-animation-underline bloghash-header__separators-none bloghash-page-title-align-left bloghash-no-sidebar entry-media-hover-style-1 bloghash-copyright-layout-1 is-section-heading-init-s1 is-footer-heading-init-s0 bloghash-input-supported bloghash-blog-image-wrap validate-comment-form bloghash-menu-accessibility elementor-default elementor-template-canvas elementor-kit-1681 elementor-page elementor-page-1678">
+    <div data-elementor-type="wp-page" data-elementor-id="1678" class="elementor elementor-1678">
+        <div class="elementor-element elementor-element-402f601 e-flex e-con-boxed e-con e-parent" data-id="402f601" data-element_type="container" data-e-type="container">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-08107d2 e-con-full e-flex e-con e-child" data-id="08107d2" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-f81bdb9 elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="f81bdb9" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <style>
+                            .slideshow-section {
+                                grid-column: 1;
+                                grid-row: 1;
+                            }
+                            /* --- SLIDESHOW STYLES --- */
+                            .slider-container {
+                                position: relative;
+                                width: 100%;
+                                height: 600px;
+                                overflow: hidden;
+                                border-radius: 10px;
+                                background: #000;
+                            }
+
+                            /* Tablets (max-width: 1024px) */
+                            @media (max-width: 1080px) {
+                                .slider-container {
+                                    height: 500px;
+                                }
+                            }
+
+                            /* Tablets (max-width: 1024px) */
+                            @media (max-width: 1024px) {
+                                .slider-container {
+                                    height: 600px;
+                                }
+                            }
+
+                            /* Large Mobile (max-width: 768px) */
+                            @media (max-width: 768px) {
+                                .slider-container {
+                                    height: 600px;
+                                }
+                            }
+
+                            /* Small Mobile (max-width: 480px) */
+                            @media (max-width: 480px) {
+                                .slider-container {
+                                    height: 450px;
+                                }
+                            }
+
+                            /* Extra Small Mobile (max-width: 360px) */
+                            @media (max-width: 360px) {
+                                .slider-container {
+                                    height: 250px;
+                                }
+                            }
+
+                            .slide {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+                                transition: opacity 0.8s ease-in-out;
+                            }
+
+                                .slide.active {
+                                    opacity: 1;
+                                    z-index: 1;
+                                }
+
+                                .slide img {
+                                    width: 100%;
+                                    height: 100%;
+                                    /*object-fit: cover;*/
+                                }
+
+                            .nav-btn {
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                background-color: rgba(0,0,0,0.5);
+                                border: none;
+                                color: white;
+                                font-size: 24px;
+                                cursor: pointer;
+                                padding: 8px 15px;
+                                border-radius: 50%;
+                                z-index: 10;
+                            }
+
+                                .nav-btn:hover {
+                                    background-color: rgba(0,0,0,0.8);
+                                }
+
+                            .prev {
+                                left: 15px;
+                            }
+
+                            .next {
+                                right: 15px;
+                            }
+
+                            /* --- Thumbnail Navigation --- */
+                            .thumbnail-container {
+                                display: flex;
+                                justify-content: left;
+                                gap: 10px;
+                                margin-top: 10px;
+                            }
+
+                                .thumbnail-container img {
+                                    width: 65px;
+                                    height: 90px;
+                                    object-fit: cover;
+                                    border-radius: 6px;
+                                    cursor: pointer;
+                                    opacity: 0.6;
+                                    transition: opacity 0.3s, transform 0.3s;
+                                    border: 2px solid transparent;
+                                }
+
+                                    .thumbnail-container img.active-thumb {
+                                        opacity: 1;
+                                        transform: scale(1.05);
+                                        border-color: #0073e6;
+                                    }
+                        </style>
+                        <!-- Slideshow Section -->
+                        <section class="slideshow-section">
+                            <div class="slider-container">
+                                <div class="slide active">
+                                    <img decoding="async" id="img_1" src="OImage1" alt="OPrimaryKeyword">
+                                </div>
+                                <div class="slide">
+                                    <img decoding="async" id="img_2" src="OImage2" alt="OPrimaryKeyword">
+                                </div>
+                                <div class="slide">
+                                    <img decoding="async" id="img_3" src="OImage3" alt="OPrimaryKeyword">
+                                </div>
+                                <div class="slide">
+                                    <img decoding="async" id="img_4" src="OImage4" alt="OPrimaryKeyword">
+                                </div>
+                                <div class="slide">
+                                    <img decoding="async" id="img_5" src="OImage5" alt="OSecondaryKeyword">
+                                </div>
+                                <!--<div class="slide">
+                                    <img decoding="async" id="img_6" src="OImage6" alt="OSecondaryKeyword">
+                                </div>
+                                <div class="slide">
+                                    <img decoding="async" id="img_7" src="OImage7" alt="OSecondaryKeyword">
+                                </div>-->
+
+                                <button class="nav-btn prev">&#10094;</button>
+                                <button class="nav-btn next">&#10095;</button>
+                            </div>
+
+                            <!-- Thumbnail Strip -->
+                            <div class="thumbnail-container">
+                                <img decoding="async" id="imgThumb_1" src="OImage1" alt="OPrimaryKeyword" class="active-thumb">
+                                <img decoding="async" id="imgThumb_2" src="OImage2" alt="OPrimaryKeyword">
+                                <img decoding="async" id="imgThumb_3" src="OImage3" alt="OPrimaryKeyword">
+                                <img decoding="async" id="imgThumb_4" src="OImage4" alt="OSecondaryKeyword">
+                                <img decoding="async" id="imgThumb_5" src="OImage5" alt="OSecondaryKeyword">
+                                <!--<img decoding="async" id="imgThumb_6" src="OImage6" alt="OSecondaryKeyword">
+                                <img decoding="async" id="imgThumb_7" src="OImage7" alt="OSecondaryKeyword">-->
+                            </div>
+                        </section>
+                        <script>
+                            const slides = document.querySelectorAll('.slide');
+                            const thumbs = document.querySelectorAll('.thumbnail-container img');
+                            let currentIndex = 0;
+                            let slideInterval;
+
+                            function showSlide(index) {
+                                slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+                                thumbs.forEach((thumb, i) => thumb.classList.toggle('active-thumb', i === index));
+                                currentIndex = index;
+                            }
+
+                            function nextSlide() {
+                                const nextIndex = (currentIndex + 1) % slides.length;
+                                showSlide(nextIndex);
+                            }
+
+                            function prevSlide() {
+                                const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+                                showSlide(prevIndex);
+                            }
+
+                            function startAutoSlide() {
+                                slideInterval = setInterval(nextSlide, 4000);
+                            }
+
+                            function stopAutoSlide() {
+                                clearInterval(slideInterval);
+                            }
+
+                            document.querySelector('.next').addEventListener('click', () => {
+                                nextSlide();
+                                stopAutoSlide();
+                                startAutoSlide();
+                            });
+
+                            document.querySelector('.prev').addEventListener('click', () => {
+                                prevSlide();
+                                stopAutoSlide();
+                                startAutoSlide();
+                            });
+
+                            thumbs.forEach((thumb, i) => {
+                                thumb.addEventListener('click', () => {
+                                    showSlide(i);
+                                    stopAutoSlide();
+                                    startAutoSlide();
+                                });
+                            });
+
+                            startAutoSlide();
+                        </script>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-55a18ae e-con-full e-flex e-con e-child" data-id="55a18ae" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-1f9591b elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-html" data-id="1f9591b" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="trust-badges">
+                            ORightPanel
+                        </div>
+
+                        <div class="button-row">
+                            OBuyButtons
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-element elementor-element-e58c067 e-flex e-con-boxed e-con e-parent" data-id="e58c067" data-element_type="container" data-e-type="container">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-b4f29c4 elementor-widget elementor-widget-shortcode" data-id="b4f29c4" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+                    <div class="elementor-shortcode">OFullDescription</div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-element elementor-element-f24756f e-flex e-con-boxed e-con e-parent" data-id="f24756f" data-element_type="container" data-e-type="container">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-83d49c7 elementor-widget elementor-widget-html" data-id="83d49c7" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                    <style>
+                        .card {
+                            background: var(--card);
+                            border-radius: 14px;
+                            overflow: hidden;
+                            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+                            transition: .3s;
+                        }
+
+                            .card:hover {
+                                transform: translateY(-5px)
+                            }
+
+                            .card img {
+                                width: 100%;
+                                aspect-ratio: 4/3;
+                                object-fit: fill;
+                                height: 250px;
+                                padding: 5px;
+                            }
+
+                            .card .desc {
+                                padding: 12px;
+                                font-weight: 600;
+                                font-size: 14px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                    </style>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-element elementor-element-2be01f2 e-flex e-con-boxed e-con e-parent" data-id="2be01f2" data-element_type="container" data-e-type="container">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-6125d1c e-con-full e-flex e-con e-child" data-id="6125d1c" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-8d32f06 elementor-widget elementor-widget-html" data-id="8d32f06" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="card">
+                            <a href="OArticleLink1"><img decoding="async" src="OArticleImageLink1" loading="lazy"></a>
+                            <div class="desc">OArticleTitle1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-657320e e-con-full e-flex e-con e-child" data-id="657320e" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-206a771 elementor-widget elementor-widget-html" data-id="206a771" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="card">
+                            <a href="OArticleLink2"><img decoding="async" src="OArticleImageLink2" loading="lazy"></a>
+                            <div class="desc">OArticleTitle2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-00caba3 e-con-full e-flex e-con e-child" data-id="00caba3" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-806f4c9 elementor-widget elementor-widget-html" data-id="806f4c9" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="card">
+                            <a href="OArticleLink3"><img decoding="async" src="OArticleImageLink3" loading="lazy"></a>
+                            <div class="desc">OArticleTitle3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-17791c8 e-con-full e-flex e-con e-child" data-id="17791c8" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-4febb51 elementor-widget elementor-widget-html" data-id="4febb51" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="card">
+                            <a href="OArticleLink4"><img decoding="async" src="OArticleImageLink4" loading="lazy"></a>
+                            <div class="desc">OArticleTitle4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-element elementor-element-8b844e3 e-flex e-con-boxed e-con e-parent" data-id="8b844e3" data-element_type="container" data-e-type="container">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-81e6e05 e-con-full e-flex e-con e-child" data-id="81e6e05" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-35124f3 elementor-widget elementor-widget-html" data-id="35124f3" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="card">
+                            <a href="OProductLink1"><img decoding="async" src="OProductImageLink1" loading="lazy"></a>
+                            <div class="desc">OProductTitle1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-1233ede e-con-full e-flex e-con e-child" data-id="1233ede" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-3554a51 elementor-widget elementor-widget-html" data-id="3554a51" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="card">
+                            <a href="OProductLink2"><img decoding="async" src="OProductImageLink2" loading="lazy"></a>
+                            <div class="desc">OProductTitle2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-80a3e1d e-con-full e-flex e-con e-child" data-id="80a3e1d" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-eb2427a elementor-widget elementor-widget-html" data-id="eb2427a" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="card">
+                            <a href="OProductLink3"><img decoding="async" src="OProductImageLink3" loading="lazy"></a>
+                            <div class="desc">OProductTitle3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-02de22e e-con-full e-flex e-con e-child" data-id="02de22e" data-element_type="container" data-e-type="container">
+                    <div class="elementor-element elementor-element-43bc9d1 elementor-widget elementor-widget-html" data-id="43bc9d1" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                        <div class="card">
+                            <a href="OProductLink4"><img decoding="async" src="OProductImageLink4" loading="lazy"></a>
+                            <div class="desc">OProductTitle4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="speculationrules">
+        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/bloghash/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+    </script>
+    <script>
+        const lazyloadRunObserver = () => {
+            const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+            const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        let lazyloadBackground = entry.target;
+                        if (lazyloadBackground) {
+                            lazyloadBackground.classList.add('e-lazyloaded');
+                        }
+                        lazyloadBackgroundObserver.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '200px 0px 200px 0px' });
+            lazyloadBackgrounds.forEach((lazyloadBackground) => {
+                lazyloadBackgroundObserver.observe(lazyloadBackground);
+            });
+        };
+        const events = [
+            'DOMContentLoaded',
+            'elementor/lazyload/observe',
+        ];
+        events.forEach((event) => {
+            document.addEventListener(event, lazyloadRunObserver);
+        });
+    </script>
+
+    <!-- Sign in with Google button added by Site Kit -->
+    <style>
+        .googlesitekit-sign-in-with-google__frontend-output-button {
+            max-width: 320px
+        }
+    </style>
+    <script src="https://accounts.google.com/gsi/client"></script>
+    <script>
+        (() => { async function handleCredentialResponse(response) { try { const res = await fetch('https://uscpl.net/wp-login.php?action=googlesitekit_auth', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(response) });/* Preserve comment text in case of redirect after login on a page with a Sign in with Google button in the WordPress comments. */ const commentText = document.querySelector('#comment')?.value; const postId = document.querySelectorAll('.googlesitekit-sign-in-with-google__comments-form-button')?.[0]?.className?.match(/googlesitekit-sign-in-with-google__comments-form-button-postid-(\d+)/)?.[1]; if (!!commentText?.length) { sessionStorage.setItem(`siwg-comment-text-${postId}`, commentText); } location.reload(); } catch (error) { console.error(error); } } if (typeof google !== 'undefined') { google.accounts.id.initialize({ client_id: '557994360696-2e76unm29h2rahr8u2hv1628phu3noq8.apps.googleusercontent.com', callback: handleCredentialResponse, library_name: 'Site-Kit' }); } const defaultButtonOptions = { "theme": "outline", "text": "signin_with", "shape": "rectangular" }; document.querySelectorAll('.googlesitekit-sign-in-with-google__frontend-output-button').forEach((siwgButtonDiv) => { const buttonOptions = { shape: siwgButtonDiv.getAttribute('data-googlesitekit-siwg-shape') || defaultButtonOptions.shape, text: siwgButtonDiv.getAttribute('data-googlesitekit-siwg-text') || defaultButtonOptions.text, theme: siwgButtonDiv.getAttribute('data-googlesitekit-siwg-theme') || defaultButtonOptions.theme, }; if (typeof google !== 'undefined') { google.accounts.id.renderButton(siwgButtonDiv, buttonOptions); } });/* If there is a matching saved comment text in sessionStorage,restore it to the comment field and remove it from sessionStorage. */ const postId = document.body.className.match(/postid-(\d+)/)?.[1]; const commentField = document.querySelector('#comment'); const commentText = sessionStorage.getItem(`siwg-comment-text-${postId}`); if (commentText?.length && commentField && !!postId) { commentField.value = commentText; sessionStorage.removeItem(`siwg-comment-text-${postId}`); } })();
+    </script>
+
+    <!-- End Sign in with Google button added by Site Kit -->
+    <script id="hostinger-reach-subscription-block-view-js-extra">
+        var hostinger_reach_subscription_block_data = { "endpoint": "https://uscpl.net/wp-json/hostinger-reach/v1/contact", "nonce": "b6c050458f", "translations": { "thanks": "Thanks for subscribing.", "error": "Something went wrong. Please try again." } };
+        //# sourceURL=hostinger-reach-subscription-block-view-js-extra
+    </script>
+    <script src="https://uscpl.net/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription-view.js?ver=1774459695" id="hostinger-reach-subscription-block-view-js"></script>
+    <script src="https://uscpl.net/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" id="swiper-js"></script>
+    <script src="https://uscpl.net/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+    <script id="bloghash-js-extra">
+        var bloghash_vars = { "ajaxurl": "https://uscpl.net/wp-admin/admin-ajax.php", "nonce": "b9d80d2634", "live-search-nonce": "d414328291", "post-like-nonce": "4c16886c6c", "close": "Close", "no_results": "No results found", "more_results": "More results", "responsive-breakpoint": "960", "dark_mode": "", "sticky-header": { "enabled": true, "hide_on": [""] }, "strings": { "comments_toggle_show": "Leave a Comment", "comments_toggle_hide": "Hide Comments" } };
+        //# sourceURL=bloghash-js-extra
+    </script>
+    <script src="https://uscpl.net/wp-content/themes/bloghash/assets/js/bloghash.min.js?ver=1.0.28" id="bloghash-js"></script>
+    <script src="https://uscpl.net/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.35.9" id="elementor-webpack-runtime-js"></script>
+    <script src="https://uscpl.net/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.35.9" id="elementor-frontend-modules-js"></script>
+    <script src="https://uscpl.net/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script id="elementor-frontend-js-before">
+        var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.35.9", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "e_optimized_markup": true, "e_pro_free_trial_popup": true, "nested-elements": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "e_variables": true, "cloud-library": true, "e_opt_in_v4_page": true, "e_components": true, "e_interactions": true, "e_editor_one": true, "import-export-customization": true }, "urls": { "assets": "https:\/\/uscpl.net\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/uscpl.net\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/uscpl.net\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "5531dbbfa0" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 1678, "title": "PostLayoutClassic%20%E2%80%93%20uscpl.net", "excerpt": "", "featuredImage": false } };
+        //# sourceURL=elementor-frontend-js-before
+    </script>
+    <script src="https://uscpl.net/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.35.9" id="elementor-frontend-js"></script>
+    <script src="https://uscpl.net/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-wpforms-08f4a4ca33532233b542.js" id="googlesitekit-events-provider-wpforms-js" defer></script>
+    <script>
+        ! function () {
+            var e = -1 < navigator.userAgent.toLowerCase().indexOf("webkit"),
+                t = -1 < navigator.userAgent.toLowerCase().indexOf("opera"),
+                n = -1 < navigator.userAgent.toLowerCase().indexOf("msie");
+            (e || t || n) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+                var e, t = location.hash.substring(1);
+                /^[A-z0-9_-]+$/.test(t) && (e = document.getElementById(t)) && (/^(?:a|select|input|button|textarea)$/i.test(e.tagName) || (e.tabIndex = -1), e.focus())
+            }, !1)
+        }();
+    </script>
+    <script id="wp-emoji-settings" type="application/json">
+        {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://uscpl.net/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+    </script>
+    <script type="module">
+        /*! This file is auto-generated */
+        const a = JSON.parse(document.getElementById("wp-emoji-settings").textContent), o = (window._wpemojiSettings = a, "wpEmojiSettingsSupports"), s = ["flag", "emoji"]; function i(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function c(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0); const a = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); return t.every((e, t) => e === a[t]) } function p(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var n = e.getImageData(16, 16, 1, 1); for (let e = 0; e < n.data.length; e++)if (0 !== n.data[e]) return !1; return !0 } function u(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\u1fac8") }return !1 } function f(e, t, n, a) { let r; const o = (r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : document.createElement("canvas")).getContext("2d", { willReadFrequently: !0 }), s = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(e => { s[e] = t(o, e, n, a) }), s } function r(e) { var t = document.createElement("script"); t.src = e, t.defer = !0, document.head.appendChild(t) } a.supports = { everything: !0, everythingExceptFlag: !0 }, new Promise(t => { let n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), c.toString(), p.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }); const r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = e => { i(n = e.data), r.terminate(), t(n) }) } catch (e) { } i(n = f(s, u, c, p)) } t(n) }).then(e => { for (const n in e) a.supports[n] = e[n], a.supports.everything = a.supports.everything && a.supports[n], "flag" !== n && (a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && a.supports[n]); var t; a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && !a.supports.flag, a.supports.everything || ((t = a.source || {}).concatemoji ? r(t.concatemoji) : t.wpemoji && t.twemoji && (r(t.twemoji), r(t.wpemoji))) });
+        //# sourceURL=https://uscpl.net/wp-includes/js/wp-emoji-loader.min.js
+    </script>
+</body>
+</html>
+
+
+<!-- Page cached by LiteSpeed Cache 7.8.0.1 on 2026-03-27 20:23:44 -->

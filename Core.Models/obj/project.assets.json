@@ -1,0 +1,144 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "DMMS.Models.Base/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DMMS.Models.Base.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DMMS.Models.Base.dll": {}
+        }
+      },
+      "DMMS.Models.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DMMS.Models.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DMMS.Models.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DMMS.Models.Common.dll": {}
+        }
+      },
+      "DMMS.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DMMS.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DMMS.Utility.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DMMS.Models.Base/1.0.0": {
+      "type": "project",
+      "path": "../Core.Models.Base/DMMS.Models.Base.csproj",
+      "msbuildProject": "../Core.Models.Base/DMMS.Models.Base.csproj"
+    },
+    "DMMS.Models.Common/1.0.0": {
+      "type": "project",
+      "path": "../Core.Models.Common/DMMS.Models.Common.csproj",
+      "msbuildProject": "../Core.Models.Common/DMMS.Models.Common.csproj"
+    },
+    "DMMS.Utility/1.0.0": {
+      "type": "project",
+      "path": "../Core.Utility/DMMS.Utility.csproj",
+      "msbuildProject": "../Core.Utility/DMMS.Utility.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "DMMS.Models.Base >= 1.0.0",
+      "DMMS.Models.Common >= 1.0.0",
+      "DMMS.Utility >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Catalyst Tech\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj",
+      "projectName": "DMMS.Models",
+      "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj",
+      "packagesPath": "C:\\Users\\Catalyst Tech\\.nuget\\packages\\",
+      "outputPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Catalyst Tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {
+              "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj"
+            },
+            "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
+              "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj"
+            },
+            "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Utility\\DMMS.Utility.csproj": {
+              "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Utility\\DMMS.Utility.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.200"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

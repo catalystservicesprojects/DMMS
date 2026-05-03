@@ -1,0 +1,24 @@
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\bin\Release\net9.0\DMMS.Models.DTOs.deps.json
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\bin\Release\net9.0\DMMS.Models.DTOs.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\bin\Release\net9.0\DMMS.Models.DTOs.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.AssemblyInfoInputs.cache
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.AssemblyInfo.cs
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.csproj.CoreCompileInputs.cache
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.sourcelink.json
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\refint\DMMS.Models.DTOs.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.DTOs\obj\Release\net9.0\ref\DMMS.Models.DTOs.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\bin\Release\net9.0\DMMS.Models.DTOs.deps.json
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\bin\Release\net9.0\DMMS.Models.DTOs.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\bin\Release\net9.0\DMMS.Models.DTOs.pdb
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.AssemblyInfoInputs.cache
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.AssemblyInfo.cs
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.csproj.CoreCompileInputs.cache
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.sourcelink.json
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\refint\DMMS.Models.DTOs.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\DMMS.Models.DTOs.pdb
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.DTOs\obj\Release\net9.0\ref\DMMS.Models.DTOs.dll

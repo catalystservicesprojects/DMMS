@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like Layout with Thumbnail Slider</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* --- MAIN GRID LAYOUT --- */
+        .main-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .slideshow-section {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .info-section {
+            grid-column: 2;
+            grid-row: 1;
+            width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-section {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* --- SLIDESHOW STYLES --- */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #000;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px 15px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .nav-btn:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .prev {
+            left: 15px;
+        }
+
+        .next {
+            right: 15px;
+        }
+
+        /* --- Thumbnail Navigation --- */
+        .thumbnail-container {
+            display: flex;
+            justify-content: left;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .thumbnail-container img {
+            width: 70px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s, transform 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .thumbnail-container img.active-thumb {
+            opacity: 1;
+            transform: scale(1.05);
+            border-color: #0073e6;
+        }
+
+        /* --- INFO SECTION --- */
+        .info-section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .info-section p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* --- BLOG SECTION --- */
+        .blog-section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .blog-section article {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* --- RESPONSIVE DESIGN --- */
+        @media (max-width: 900px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+
+            .slideshow-section, .info-section, .blog-section {
+                grid-column: 1;
+            }
+        }
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .thumbnail-container img {
+            width: 70px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: 0.9;
+            transition: opacity 0.3s, transform 0.3s, border-color 0.3s;
+            border: 2px solid #ccc; /* 👈 visible border for all thumbnails */
+        }
+
+        .thumbnail-container img:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .thumbnail-container img.active-thumb {
+            border-color: #0073e6; /* 👈 highlight active thumbnail */
+            transform: scale(1.08);
+            opacity: 1;
+        }
+    </style>
+    <style>
+        .article-section {
+            grid-column: 1 / span 2;
+        }
+        .product-section {
+            grid-column: 1 / span 2;
+        }
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <div class="main-container">
+        <!-- Slideshow Section -->
+        <section class="slideshow-section">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img id="img_1" src="OImage1" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img id="img_2" src="OImage2" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img id="img_3" src="OImage3" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img id="img_4" src="OImage4" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img id="img_5" src="OImage5" alt="Slide 4">
+                </div>
+                <div class="slide">
+                    <img id="img_6" src="OImage6" alt="Slide 4">
+                </div>
+
+                <button class="nav-btn prev">&#10094;</button>
+                <button class="nav-btn next">&#10095;</button>
+            </div>
+
+            <!-- Thumbnail Strip -->
+            <div class="thumbnail-container">
+                <img id="imgThumb_1" src="OImage1" alt="Thumb 1" class="active-thumb">
+                <img id="imgThumb_2" src="OImage2" alt="Thumb 2">
+                <img id="imgThumb_3" src="OImage3" alt="Thumb 3">
+                <img id="imgThumb_4" src="OImage4" alt="Thumb 4">
+                <img id="imgThumb_5" src="OImage5" alt="Thumb 5">
+                <img id="imgThumb_6" src="OImage6" alt="Thumb 6">
+            </div>
+        </section>
+
+        <!-- Product Introduction Section -->
+        <section class="info-section">
+            ORightPanel
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            OFullDescription
+        </section>
+
+        <!-- Article Section -->
+        <div class="article-section" style="width: 100% !important">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="OArticleLink1">
+                        <img src="OArticleImageLink1" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">OArticleTitle1</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="OArticleLink2">
+                        <img src="OArticleImageLink2" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">OArticleTitle2</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="OArticleLink3">
+                        <img src="OArticleImageLink3" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">OArticleTitle3</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="OArticleLink4">
+                        <img src="OArticleImageLink4" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">OArticleTitle4</div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <!-- Product Section -->
+        <section class="product-section" style="width: 100% !important">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="OProductLink1">
+                        <img src="OProductImageLink1" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">OProductTitle1</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="OProductLink2">
+                        <img src="OProductImageLink2" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">OProductTitle2</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="OProductLink3">
+                        <img src="OProductImageLink3" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">OProductTitle3</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="OProductLink4">
+                        <img src="OProductImageLink4" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">OProductTitle4</div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </section>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const thumbs = document.querySelectorAll('.thumbnail-container img');
+        let currentIndex = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+            thumbs.forEach((thumb, i) => thumb.classList.toggle('active-thumb', i === index));
+            currentIndex = index;
+        }
+
+        function nextSlide() {
+            const nextIndex = (currentIndex + 1) % slides.length;
+            showSlide(nextIndex);
+        }
+
+        function prevSlide() {
+            const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(prevIndex);
+        }
+
+        function startAutoSlide() {
+            slideInterval = setInterval(nextSlide, 4000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(slideInterval);
+        }
+
+        document.querySelector('.next').addEventListener('click', () => {
+            nextSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            prevSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        });
+
+        thumbs.forEach((thumb, i) => {
+            thumb.addEventListener('click', () => {
+                showSlide(i);
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        });
+
+        startAutoSlide();
+    </script>
+
+</body>
+</html>

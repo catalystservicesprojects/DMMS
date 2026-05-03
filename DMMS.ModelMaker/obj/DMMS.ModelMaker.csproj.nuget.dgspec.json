@@ -1,0 +1,444 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\NinadGawankar\\Projects\\DMMS\\DMMS.ModelMaker\\DMMS.ModelMaker.csproj": {}
+  },
+  "projects": {
+    "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj",
+        "projectName": "DMMS.Models.Base",
+        "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj",
+        "packagesPath": "C:\\Users\\ninad\\.nuget\\packages\\",
+        "outputPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ninad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj",
+        "projectName": "DMMS.Models.Common",
+        "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj",
+        "packagesPath": "C:\\Users\\ninad\\.nuget\\packages\\",
+        "outputPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ninad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj",
+        "projectName": "DMMS.Models.DTOs",
+        "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj",
+        "packagesPath": "C:\\Users\\ninad\\.nuget\\packages\\",
+        "outputPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.DTOs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ninad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj",
+        "projectName": "DMMS.Models.ViewModels",
+        "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\ninad\\.nuget\\packages\\",
+        "outputPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ninad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj"
+              },
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj",
+        "projectName": "DMMS.Models",
+        "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj",
+        "packagesPath": "C:\\Users\\ninad\\.nuget\\packages\\",
+        "outputPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ninad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj"
+              },
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NinadGawankar\\Projects\\DMMS\\DMMS.ModelMaker\\DMMS.ModelMaker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NinadGawankar\\Projects\\DMMS\\DMMS.ModelMaker\\DMMS.ModelMaker.csproj",
+        "projectName": "DMMS.ModelMaker",
+        "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\DMMS.ModelMaker\\DMMS.ModelMaker.csproj",
+        "packagesPath": "C:\\Users\\ninad\\.nuget\\packages\\",
+        "outputPath": "D:\\NinadGawankar\\Projects\\DMMS\\DMMS.ModelMaker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ninad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj"
+              },
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj"
+              },
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj"
+              },
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj"
+              },
+              "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj": {
+                "projectPath": "D:\\NinadGawankar\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

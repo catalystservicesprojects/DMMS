@@ -1,0 +1,2986 @@
+﻿@model DMMS.Models.ViewModels.Posting
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://cdn.tiny.cloud/1/hc10v3pdh3splpqobrzoyucjuzid5aee6nh5cyd8beqtk9wf/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+
+<style>
+    #StageOne, #StageTwo {
+        background-color: #f2f2f2;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #ButtonRowTop, #ButtonRowBottom {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        background-color: #f2f2f2;
+    }
+
+    /* Style the links inside the pill navigation menu */
+    .pill-nav a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px;
+        padding-left: 20px;
+        padding-right: 25px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+
+        /* Change the color of links on mouse-over */
+        .pill-nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .pill-nav a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+    table, td, th {
+        /* border: 1px solid; */
+        border: var(--bs-border-width) solid var(--bs-border-color);
+    }
+
+
+    .linksTable {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    .seller-name {
+        width: 100px;
+    }
+</style>
+<br />
+<input type="hidden" value="@ViewBag.ContentId" name="ContentId" id="ContentId" class="form-control" placeholder="ContentId" />
+<input type="hidden" value="@ViewBag.Name" name="Name" id="Name" class="form-control" placeholder="Name" />
+<input type="hidden" value="@ViewBag.Slug" name="Slug" id="Slug" class="form-control" placeholder="Slug" />
+<input type="hidden" value="@ViewBag.ShortName" name="ShortName" id="ShortName" class="form-control" placeholder="Short Name" />
+<input type="hidden" value="@ViewBag.PrimaryKeyword" name="PrimaryKeyword" id="PrimaryKeyword" class="form-control" placeholder="Primary Keyword" />
+<input type="hidden" value="@ViewBag.SecondaryKeyword" name="SecondaryKeyword" id="SecondaryKeyword" class="form-control" placeholder="Secondary Keyword" />
+<input type="hidden" value="@HttpContextAccessor.HttpContext.Session.GetInt32("CompanyId")" name="CompanyId" id="CompanyId" class="form-control" placeholder="Company Id" />
+<input type="hidden" value="@HttpContextAccessor.HttpContext.Session.GetInt32("UserId")" name="UserId" id="UserId" placeholder="User Id" />
+@{
+    var newGuid = Guid.NewGuid();
+    var newGuidTrimmed = newGuid.ToString().Replace("-", "").ToLower();
+}
+<input type="hidden" value="@newGuid" name="Guid" id="Guid" placeholder="Guid" />
+<input type="hidden" value="@newGuidTrimmed" name="Identity" id="Identity" class="form-control" placeholder="Identity" />
+<input type="hidden" value="1" name="Status" id="Status" placeholder="Status" />
+<input type="hidden" value="0" name="Tenant" id="Tenant" placeholder="Tenant" />
+<input type="hidden" value="1" name="CreatedBy" id="CreatedBy" placeholder="CreatedBy" />
+<input type="hidden" value="@DateTime.Now" name="CreationDate" id="CreationDate" placeholder="CreationDate" />
+<input type="hidden" value="1" name="ModifiedBy" id="ModifiedBy" placeholder="ModifiedBy" />
+<input type="hidden" value="@DateTime.Now" name="ModifiedDate" id="ModifiedDate" placeholder="ModifiedDate" />
+<input type="hidden" value="@Model.ProductHtml" name="ProductHtml" id="ProductHtml" placeholder="ProductHtml" />
+<input type="hidden" name="Product Buy Buttons" id="ProductBuyButtons" placeholder="Product Buy Buttons" />
+
+<div class="row">
+    <div class="col">
+        Category Level 1:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 2:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 3:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 4:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 5:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 6:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 7:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 8:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 9:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 10:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 11:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col">
+        Category Level 12:
+        <select id="" class="form-select">
+            <option value="0">Select</option>
+            @foreach (var item in Model.Websites)
+            {
+                if (item.Name == ViewBag.Website)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col">
+        @* <div class="btn-group">
+            <a href="#" class="btn btn-primary"
+               onClick="Website=window.open('@ViewBag.Website','Website','width=1080,height=720'); return false;">Website</a>
+            <a href="#" class="btn btn-primary"
+               onClick="Amazon=window.open('https://www.amazon.in/','Amazon','width=1080,height=720'); return false;">Amazon</a>
+            <a href="button" class="btn btn-primary"
+               onClick="ChatGPT=window.open('http://www.google.com','ChatGPT','width=1080,height=720'); return false;">ChatGPT</a>
+            <a href="#" class="btn btn-primary"
+                onClick="Google=window.open('http://www.google.com','Google','width=1080,height=720'); return false;">Google</a>
+            <a href="#" class="btn btn-primary"
+               onClick="DupliChecker=window.open('https://www.duplichecker.com/','DupliChecker','width=1080,height=720'); return false;">DupliChecker</a>
+            <a href="#" class="btn btn-primary"
+               onClick="WordPress=window.open('@ViewBag.Website/wp-admin','WordPress','width=1080,height=720'); return false;">WordPress</a>
+        </div> *@
+        <div class="btn-group">
+            <a href="@ViewBag.Website" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Website</a>
+            <a href="https://www.amazon.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Amazon</a>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">ChatGPT</a>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Google</a>
+            <a href="https://www.duplichecker.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">DupliChecker</a>
+            <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Freepik</a>
+            <a href="@ViewBag.Website/wp-admin" target="_blank" rel="noopener noreferrer" class="btn btn-primary">WordPress</a>
+        </div>
+    </div>
+    <div class="col">
+        <div class="btn-group">
+            <a href="#" class="btn btn-info">Facebook</a>
+            <a href="#" class="btn btn-info">Instagram</a>
+            <a href="#" class="btn btn-info">X (Twitter)</a>
+            <a href="#" class="btn btn-info">Threads</a>
+            <a href="#" class="btn btn-info">Pintrest</a>
+            <a href="#" class="btn btn-info">LinkedIn</a>
+            <a href="#" class="btn btn-info">YouTube</a>
+        </div>
+    </div>
+    <div class="col">
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary">Facebook</a>
+            <a href="#" class="btn btn-primary">Instagram</a>
+            <a href="#" class="btn btn-primary">X (Twitter)</a>
+            <a href="#" class="btn btn-primary">Threads</a>
+            <a href="#" class="btn btn-primary">Pintrest</a>
+            <a href="#" class="btn btn-primary">LinkedIn</a>
+            <a href="#" class="btn btn-primary">YouTube</a>
+        </div>
+    </div>
+
+    @* <div class="btn-group">
+            <a href="#" class="btn btn-primary" onclick="openWindow('@ViewBag.Website')">Website</a>
+            <a href="#" class="btn btn-primary" onclick="openWindow('https://www.amazon.in/')">Amazon</a>
+            <a href="#" class="btn btn-primary" onclick="openWindow('https://www.google.com')">ChatGPT</a>
+            <a href="#" class="btn btn-primary" onclick="openWindow('https://www.google.com')">Google</a>
+            <a href="#" class="btn btn-primary" onclick="openWindow('https://www.duplichecker.com/')">DupliChecker</a>
+            <a href="#" class="btn btn-primary" onclick="openWindow('@ViewBag.Website/wp-admin')">WordPress</a>
+
+            <!-- Close All Button -->
+            <a href="#" class="btn btn-danger" onclick="closeAllWindows()">Close All</a>
+        </div>
+
+        <script>
+            let openedWindows = [];
+
+            function openWindow(url) {
+                event.preventDefault();
+                let win = window.open(url, "_blank", "width=1080,height=720");
+                if (win) {
+                    openedWindows.push(win);
+                }
+            }
+
+            function closeAllWindows() {
+                openedWindows.forEach(win => {
+                    if (win && !win.closed) {
+                        win.close();
+                    }
+                });
+                openedWindows = [];
+            }
+        </script> *@
+</div>
+<br />
+<!---------------------------------------------------------------------Bottom Buttons Starts------------------------------------------------------------------------>
+<div id="ButtonRowTop" class="row" style="display: flex;">
+    <div class="col" style="display: flex; justify-content: left;">
+        <button id="TopStagePrev" type="button" class="btn btn-primary" style="width: 150px; margin: 10px">Previous</button>
+    </div>
+    <div class="col" style="display: flex; justify-content: center;">
+        <div class="pill-nav">
+            <a href="#" class="active stage stage1" id="tPill-1">1</a>
+            <a href="#" class="stage stage2" id="tPill-2">2</a>
+            <a href="#" class="stage stage3" id="tPill-3">3</a>
+            <a href="#" class="stage stage4" id="tPill-4">4</a>
+            <a href="#" class="stage stage5" id="tPill-5">5</a>
+        </div>
+    </div>
+    <div class="col" style="display: flex; justify-content: right;">
+        <button id="TopStageNext" type="button" class="btn btn-primary" style="width: 150px; margin: 10px">Next</button>
+    </div>
+</div>
+<input id="Stage" type="hidden" value="1" />
+<!---------------------------------------------------------------------Bottom Buttons Ends-------------------------------------------------------------------------->
+<!-----------------------------Stage 1 Starts-------------------------->
+<div id="StageOne" class="row">
+    <div class="col">
+        @{
+            string basic_raw = "Title: " + ViewBag.Title + "\n" +
+"Link: " + ViewBag.Link + "\n" +
+"Image Link: " + ViewBag.ImageLink + "\n" +
+"Slug: " + ViewBag.Slug + "\n" +
+"Primary Keyword: " + ViewBag.PrimaryKeyword + "\n" +
+"Secondary Keywords: " + ViewBag.SecondaryKeywords + "\n" +
+"Tertiary Keywords: " + ViewBag.TertiaryKeywords + "\n" +
+"Short Title: " + ViewBag.ShortName + "\n" +
+"Hook: " + ViewBag.Hook + "\n" +
+"Description: " + ViewBag.Description + "\n" +
+"Author: " + ViewBag.Author + "\n";
+        }
+        <p for="raw_content"><h3>Raw Content:</h3></p>
+        <textarea id="raw_content" class="form-control" rows="5" name="text" style="width: 100%; min-height: 1500px;">@(Model.ContentRaw != null ? @Model.ContentRaw.Value : basic_raw)</textarea>
+    </div>
+    <div class="col">
+        <p for="ai_content"><h3>AI Content:</h3></p>
+        <textarea id="ai_content_introduction" class="form-control" name="text" style="width: 100%; min-height: 200px;" placeholder="Enter Introduction Here">@(Model.ContentAi != null ? @Model.ContentAi.Introduction : "")</textarea>
+        <br />
+        <textarea id="ai_content" class="form-control" name="text" style="width: 100%; min-height: 1500px;">@(Model.ContentAi != null ? @Model.ContentAi.Value : "")</textarea>
+    </div>
+</div>
+<!-----------------------------Stage 1 Ends---------------------------->
+<!-----------------------------Stage 2 Starts-------------------------->
+<div id="StageTwo" class="row">
+    <div class="col">
+        <p for="affiliate_links"><h3>Affiliate Links:</h3></p>
+        <table id="affiliate_links" class="linksTable" style="text-align: left">
+            @for (int i = 0; i < Model.SellerEntities.Count; i += 2)
+            {
+                <tr>
+                    <td>
+                        <div class="col">
+                            <div class="row mb-1">
+                                <label id="af_seller_name_@Model.SellerEntities[i].Id" value="" style="padding-left: 30px" class="col-sm-2 col-form-label">@Model.SellerEntities[i].Name</label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="affiliate price form-control" id="af_price_@Model.SellerEntities[i].Id" placeholder="Price">
+                                </div>
+                                <div class="col-sm-7">
+                                    <input type="text" class="affiliate form-control" id="af_link_@Model.SellerEntities[i].Id" placeholder="Affiliate Link">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="row mb-1">
+                                <label id="af_seller_name_@Model.SellerEntities[i + 1].Id" value="" style="padding-left: 50px" class="col-sm-2 col-form-label">@Model.SellerEntities[i + 1].Name</label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="affiliate price form-control" id="af_price_@Model.SellerEntities[i + 1].Id" placeholder="Price">
+                                </div>
+                                <div class="col-sm-7">
+                                    <input type="text" class="affiliate form-control" id="af_link_@Model.SellerEntities[i + 1].Id" placeholder="Affiliate Link">
+                                </div>
+                            </div>
+                        </div>
+                        @*                         <div class="col">
+                            @if (Model.SellerEntities.Count > (i + 2))
+                            {
+                                <div class="row mb-1">
+                                    <label id="af_seller_name_@Model.SellerEntities[i + 1].Id" value="" style="padding-left: 50px" class="col-sm-2 col-form-label">@Model.SellerEntities[i + 1].Name</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="affiliate price form-control" id="af_price_@Model.SellerEntities[i + 1].Id" placeholder="Price">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="affiliate form-control" id="af_link_@Model.SellerEntities[i + 1].Id" placeholder="Affiliate Link">
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="row mb-1">
+                                    <div class="col-sm-2">
+                                        <input type="text" id="af_seller_name_@Model.SellerEntities[i].Id" style="padding-left: 40px" value="" class="affiliate seller-name col-sm-2 col-form-label" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="affiliate price form-control" id="af_price_@Model.SellerEntities[i].Id" placeholder="Price">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="affiliate form-control" id="af_link_@Model.SellerEntities[i].Id" placeholder="Affiliate Link">
+                                    </div>
+                                </div>
+                            }
+                        </div> *@
+                    </td>
+                </tr>
+            }
+        </table>
+        <p for="external_links"><h3>Sliders Links & Social Links:</h3></p>
+        <table id="external_links" class="externalTable" style="width: 100%">
+            @for (int i = 0; i < Model.Images.Count; i++)
+            {
+                <tr>
+                    <td>
+                        <div class="col">
+                            @if (i == 0)
+                            {
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="eximage form-control" id="image_@(i + 1)" value="@ViewBag.ImageLink" placeholder="@Model.Images[i] @(i + 1) Link">
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="eximage form-control" id="image_@(i + 1)" placeholder="@Model.Images[i] @(i + 1) Link">
+                                </div>
+                            }
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="exvideo form-control" id="video_@(i + 1)" placeholder="@Model.Videos[i] @(i + 1) Link">
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="exsocial form-control" id="social_@(i + 1)" placeholder="@Model.Socials[i] Post Link">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="col">
+        <p for="external_links"><h3>Reference Links:</h3></p>
+        <table id="external_links" class="externalTable" style="width: 100%">
+            <tr>
+                <td colspan="3"><h3>Articles</h3></td>
+                <td colspan="3"><h3>Products</h3></td>
+            </tr>
+            @for (int i = 0; i < Model.Articles.Count; i++)
+            {
+                <tr>
+                    @if (Model.PreviousContentArticleLinksReferences != null && i < Model.PreviousContentArticleLinksReferences.Count
+                                                                                                                                                                && Model.PreviousContentArticleLinksReferences[i].Title != null)
+                    {
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_title_@(i + 1)"
+                                           value="@Model.PreviousContentArticleLinksReferences[i].Title" placeholder="Article @(i + 1) Title">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_link_@(i + 1)"
+                                           value="@Model.PreviousContentArticleLinksReferences[i].Link" placeholder="Article @(i + 1) Link">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_image_@(i + 1)"
+                                           value="@Model.PreviousContentArticleLinksReferences[i].ImageLink" placeholder="Article @(i + 1) Image Link">
+                                </div>
+                            </div>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_title_@(i + 1)" placeholder="Article @(i + 1) Title">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_link_@(i + 1)" placeholder="Article @(i + 1) Link">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_image_@(i + 1)" placeholder="Article @(i + 1) Image Link">
+                                </div>
+                            </div>
+                        </td>
+                    }
+                    @if (Model.PreviousContentProductLinksReferences != null && i < Model.PreviousContentProductLinksReferences.Count && Model.PreviousContentProductLinksReferences[i].Title != null)
+                    {
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_title_@(i + 1)"
+                                           value="@Model.PreviousContentProductLinksReferences[i].Title" placeholder="Product @(i + 1) Title">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_link_@(i + 1)"
+                                           value="@Model.PreviousContentProductLinksReferences[i].Link" placeholder="Product @(i + 1) Link">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_image_@(i + 1)"
+                                           value="@Model.PreviousContentProductLinksReferences[i].ImageLink" placeholder="Product @(i + 1) Image Link">
+                                </div>
+                            </div>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_title_@(i + 1)" placeholder="Product @(i + 1) Title">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_link_@(i + 1)" placeholder="Product @(i + 1) Link">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_image_@(i + 1)" placeholder="Product @(i + 1) Image Link">
+                                </div>
+                            </div>
+                        </td>
+                    }
+                    @* @if (Model.PreviousContentArticleLinksReferences == null && Model.PreviousContentProductLinksReferences == null)
+                    {
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_title_@(i + 1)" placeholder="Article @(i + 1) Title">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_link_@(i + 1)" placeholder="Article @(i + 1) Link">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="article form-control" id="article_image_@(i + 1)" placeholder="Article @(i + 1) Image Link">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_title_@(i + 1)" placeholder="Product @(i + 1) Title">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_link_@(i + 1)" placeholder="Product @(i + 1) Link">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <div class="mr-3 mb-1">
+                                    <input type="text" class="post form-control" id="post_image_@(i + 1)" placeholder="Product @(i + 1) Image Link">
+                                </div>
+                            </div>
+                        </td>
+                    } *@
+                </tr>
+            }
+        </table>
+        <p for="in_content_links"><h3>In Content Links:</h3></p>
+        <table id="in_content_links" class="externalTable" style="width: 100%">
+            @for (int i = 1; i <= 10; i += 2)
+            {
+                <tr>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="form-control" id="content_image_@i" placeholder="Image Link @i" />
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="form-control" id="content_image_@(i + 1)" placeholder="Image Link @(i + 1)" />
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="form-control" id="content_video_@i" placeholder="Video Link @i" />
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="form-control" id="content_video_@(i + 1)" placeholder="Video Link @(i + 1)" />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+<!-----------------------------Stage 2 Ends---------------------------->
+<!-----------------------------Stage 3 Starts-------------------------->
+<div id="StageThree" class="row">
+    <div class="col">
+        <p for="backlinks_content"><h3>External Links in Content:</h3></p>
+        <table style="width: 100%;">
+            @for (int i = 1; i <= 30; i += 2)
+            {
+                string wordsentence = "wordsentence_";
+                string wordOrSentence = "wordOrSentence_";
+                string backLink = "backLink_";
+                <tr>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="form-control external_links @($"{wordsentence + i}")" id="@($"{wordOrSentence + i}")" placeholder="Words or Sentence @i" />
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="form-control external_links @($"{wordsentence + i}")" id="@($"{backLink + i}")" placeholder="Link @i" />
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="form-control external_links @($"{wordsentence}{i + 1}")" id="@($"{wordOrSentence}{i + 1}")" placeholder="Words or Sentence @(i + 1)" />
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div class="mr-3 mb-1">
+                                <input type="text" class="form-control external_links @($"{wordsentence}{i + 1}")" id="@($"{backLink}{i + 1}")" placeholder="Link @(i + 1)" />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="col">
+        <style>
+                    .card .desc {
+                        white-space: wrap !important;
+                    }
+        </style>
+        <p for="view_content"><h3>View Content:</h3></p>
+        <div id="view_content" class="form-control" name="text" style="width: 100%; min-height: 1500px;"></div>
+    </div>
+</div>
+<!-----------------------------Stage 3 Ends---------------------------->
+<!-----------------------------Stage 4 Starts-------------------------->
+<div id="StageFour" class="row">
+    <div class="col">
+        <div class="row">
+            <div class="col">
+                <p for="result_content"><h3>Yoast SEO:</h3></p>
+            </div>
+            <div class="col text-end">
+                <button type="button" class="btn btn-primary" style="width: 150px; margin: 10px;" onclick="populateHtmlView()">
+                    Generate HTML
+                </button>
+            </div>
+        </div>
+        <div id="result_content" class="form-control" rows="5" name="text" style="width: 100%; min-height: 1500px;">
+            <form id="contentMetaForm" action="@Url.Action("Update", "Contents")" method="POST">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <!-- Title -->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="Title" name="Title" value="@ViewBag.Title" class="form-control" placeholder="Name/ Meta Title" />
+                    <label asp-for="Title">Meta Title / Name</label>
+                </div>
+                <!-- Link -->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="Link" name="Link" value="@ViewBag.Link" class="form-control" placeholder="Link (Not Mandatory)" />
+                    <label asp-for="Link">Link (Not Mandatory)</label>
+                </div>
+                <!-- Image Link -->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="ImageLink" name="ImageLink" value="@ViewBag.ImageLink" class="form-control" placeholder="Image Link (Not Mandatory)" />
+                    <label asp-for="ImageLink">Image Link (Not Mandatory)</label>
+                </div>
+                <!-- Slug -->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="Slug" name="Slug" value="@ViewBag.Slug" class="form-control" placeholder="Slug (Not Mandatory)" />
+                    <label asp-for="Slug">Slug (Not Mandatory)</label>
+                </div>
+                <!-- PrimaryKeyword -->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="PrimaryKeyword" name="PrimaryKeyword" value="@ViewBag.PrimaryKeyword" class="form-control" placeholder="Primary Keyword" />
+                    <label asp-for="PrimaryKeyword">Primary Keyword / Meta Keywords</label>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Short Description -->
+                        <div class="form-floating mt-3 mb-3">
+                            <textarea id="SecondaryKeywords" name="SecondaryKeywords" value="@ViewBag.SecondaryKeywords" class="form-control" placeholder="Secondary Keywords (Not Mandatory but Important)" style="height:100px">@ViewBag.SecondaryKeywords</textarea>
+                            <label asp-for="SecondaryKeywords">Secondary Keywords (Not Mandatory but Important)</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Short Description -->
+                        <div class="form-floating mt-3 mb-3">
+                            <textarea id="TertiaryKeywords" name="TertiaryKeywords" value="@ViewBag.TertiaryKeywords" class="form-control" placeholder="Tertiary Keywords (Not Mandatory but Important)" style="height:100px">@ViewBag.TertiaryKeywords</textarea>
+                            <label asp-for="TertiaryKeywords">Tertiary Keywords (Not Mandatory but Important)</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Short Name -->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="ShortName" name="ShortName" value="@ViewBag.ShortName" class="form-control" placeholder="Short Name" />
+                    <label asp-for="ShortName">Short Name</label>
+                </div>
+                <!-- Hook -->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="Hook" name="Hook" value="@ViewBag.Hook" class="form-control" placeholder="Hook" />
+                    <label asp-for="Hook">Hook</label>
+                </div>
+                <!-- Hook Slug-->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="HookSlug" name="HookSlug" value="@ViewBag.HookSlug" class="form-control" placeholder="Hook Slug" />
+                    <label asp-for="HookSlug">Hook Slug</label>
+                </div>
+                <hr />
+                <h5>SEO Meta Tags</h5>
+                <!-- Meta Description -->
+                <div class="form-floating mt-3 mb-3">
+                    <textarea class="form-control" id="Description" name="Description" value="@ViewBag.Description" placeholder="Meta Description" style="height:100px">@ViewBag.Description</textarea>
+                    <label>Meta Description</label>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Meta Author -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" id="Author" name="Author" value="@ViewBag.Author" placeholder="Author">
+                            <label>Meta Author</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Robots -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" id="Robots" name="Robots" value="@ViewBag.Robots">
+                            <label>Robots</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Language -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" id="Language" name="Language" value="@ViewBag.Language">
+                            <label>Language</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Revisit -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" id="Revisit" name="Revisit" value="@ViewBag.Revisit" value="7 days">
+                            <label>Revisit After</label>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="Id" value="@ViewBag.Id" />
+                <input type="hidden" name="ContentId" value="@ViewBag.ContentId" />
+                <input type="hidden" name="WebsiteId" value="@ViewBag.WebsiteId" />
+                <input type="hidden" name="CompanyId" value="@Context.Session.GetInt32("CompanyId")" />
+                <input type="hidden" name="UserId" value="@Context.Session.GetInt32("UserId")" />
+                @* @{
+                    var newGuid = Guid.NewGuid();
+                    var newGuidTrimmed = newGuid.ToString().Replace("-", "").ToLower();
+                }
+                <input type="hidden" name="Guid" value="@newGuid" />
+                <input type="hidden" name="Identity" value="@newGuidTrimmed" />
+                <input type="hidden" name="Status" value="1" />
+                <input type="hidden" name="Tenant" value="1" />
+                <input type="hidden" name="CreatedBy" value="1" />
+                <input type="hidden" name="CreationDate" value="@DateTime.Now" />
+                <input type="hidden" name="ModifiedBy" value="1" />
+                <input type="hidden" name="ModifiedDate" value="@DateTime.Now" />
+                <br />
+                <div class="mt-3">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div> *@
+            </form>
+            <style>
+                            .error {
+                                border: 1px solid red;
+                            }
+            </style>
+            <script>
+                            function validateForm() {
+                            let isValid = true;
+                            let errors = [];
+
+                            function validateRequired(fieldId, fieldName) {
+                            const el = document.getElementById(fieldId);
+                            if (!el || !el.value.trim()) {
+                            isValid = false;
+                            errors.push(fieldName + " is required");
+                            if (el)
+                            el.classList.add("error");
+                            } else {
+                            el.classList.remove("error");
+                            }
+                            }
+
+                            function validateUrl(fieldId, fieldName) {
+                            const el = document.getElementById(fieldId);
+                            if (el && el.value.trim() !== "") {
+                            try {
+                            new URL(el.value);
+                            el.classList.remove("error");
+                            } catch {
+                            isValid = false;
+                            errors.push(fieldName + " must be a valid URL");
+                            el.classList.add("error");
+                            }
+                            }
+                            }
+
+                            // Required fields
+                            validateRequired("Title", "Title");
+                            validateRequired("Link", "Link");
+                            validateRequired("ImageLink", "ImageLink");
+                            validateRequired("PrimaryKeyword", "PrimaryKeyword");
+                            validateRequired("ShortName", "ShortName");
+                            validateRequired("Description", "Description");
+                            validateRequired("Author", "Author");
+                            validateRequired("Robots", "Robots");
+                            validateRequired("Hook", "Hook");
+                            validateRequired("Language", "Language");
+                            validateRequired("Revisit", "Revisit");
+                            validateRequired("Slug", "Slug");
+                            validateRequired("HookSlug", "HookSlug");
+
+                            // Optional URL validation
+                            validateUrl("Link", "Link");
+                            validateUrl("ImageLink", "ImageLink");
+
+                            if (!isValid) {
+                            alert(errors.join("\n"));
+                            }
+
+                            return isValid;
+                            }
+            </script>
+            <script>
+                            async function submitFormAjax() {
+
+                            // ✅ Step 1: Validate
+                            if (!validateForm()) {
+                            return;
+                            }
+
+                            const form = document.getElementById("contentMetaForm");
+                            const formData = new FormData(form);
+
+                            try {
+                            const response = await fetch('/Contents/Update', {
+                            method: 'POST',
+                            body: formData
+                            });
+
+                            if (!response.ok) {
+                            throw new Error("Server error");
+                            }
+
+                            const result = await response.json();
+
+                            // ✅ Success handling
+                            if (result.success) {
+                            alert("Saved successfully!");
+
+                            // 🔥 Optional redirect
+                            if (result.redirectUrl) {
+                            // window.location.href = result.redirectUrl;
+                            }
+                            } else {
+                            alert(result.message || "Something went wrong");
+                            }
+
+                            } catch (error) {
+                            console.error(error);
+                            alert("Error submitting form");
+                            }
+                            }
+            </script>
+            @* <form action="/action_page.php">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" value="@ViewBag.Title" id="Title" placeholder="Name/ Meta Title" name="Title" disabled>
+                    <label for="Title">Name/ Meta Title</label>
+                </div>
+                <!-- Link -->
+                <div class="form-floating mt-3 mb-3">
+                    <input name="Link" value="@ViewBag.Link" class="form-control" placeholder="Link" />
+                    <label asp-for="Link">Link</label>
+                </div>
+                <!-- Image Link -->
+                <div class="form-floating mt-3 mb-3">
+                    <input name="ImageLink" value="@ViewBag.ImageLink" class="form-control" placeholder="ImageLink" />
+                    <label asp-for="ImageLink">Image Link</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control" value="@ViewBag.Slug" id="Slug" placeholder="Slug" name="Slug" disabled>
+                    <label for="Slug">Slug</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control" value="@ViewBag.PrimaryKeyword" id="PrimaryKeyword" placeholder="Primary Keyword / Meta Keywords" name="PrimaryKeyword" disabled>
+                    <label for="PrimaryKeyword">Primary Keyword / Meta Keywords</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control" value="@ViewBag.ShortName" id="ShortName" placeholder="Short Name" name="ShortName" disabled>
+                    <label for="ShortName">ShortName</label>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Meta Author -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" id="Author" name="Author" placeholder="Author">
+                            <label>Meta Author</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Robots -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" id="Robots" name="Robots" value="index, follow">
+                            <label>Robots</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control" value="@ViewBag.SecondaryKeyword" id="SecondaryKeyword" placeholder="Secondary Keywords" name="SecondaryKeyword" disabled>
+                    <label for="SecondaryKeyword">Secondary Keyword</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <textarea type="text" class="form-control" value="@ViewBag.MetaDescription" style="height: 100px" id="MetaDescription" placeholder="Enter password" name="MetaDescription"></textarea>
+                    <label for="MetaDescription">Meta Description</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control" value="@ViewBag.Hook" id="Hook" placeholder="Hook (Mandatory)" name="Hook">
+                    <label asp-for="Hook" class="control-label">Hook (Mandatory)</label>
+                </div>
+                <hr />
+                <h5>SEO Meta Tags</h5>
+                <!-- Meta Description -->
+                <div class="form-floating mt-3 mb-3">
+                    <textarea class="form-control" name="MetaDescription" value="@ViewBag.MetaDescription" placeholder="Meta Description (Not Mandatory)" style="height:100px"></textarea>
+                    <label>Meta Description (Not Mandatory)</label>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Meta Author -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" value="@ViewBag.MetaAuthor" name="MetaAuthor" placeholder="Author">
+                            <label>Meta Author</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Robots -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" value="@ViewBag.Robots" name="MetaRobots">
+                            <label>Robots</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Language -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" value="@ViewBag.MetaLanguage" name="MetaLanguage">
+                            <label>Language</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Revisit -->
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" value="@ViewBag.MetaRevisit" name="MetaRevisit">
+                            <label>Revisit After</label>
+                        </div>
+                    </div>
+                </div>
+            </form> *@
+        </div>
+    </div>
+    <div class="col">
+        <p for="edit_content"><h3>Edit Content:</h3></p>
+        <textarea id="edit_content" class="form-control" name="text" style="width: 100%; min-height: 1500px;"></textarea>
+    </div>
+</div>
+<!-----------------------------Stage 4 Ends---------------------------->
+<!-----------------------------Stage 5 Starts-------------------------->
+<div id="StageFive" class="row">
+    <div class="col">
+        <p for="last_content"><h3>Yoast SEO:</h3></p>
+        <div id="last_content" class="form-control" rows="5" name="text" style="width: 100%; min-height: 1500px;"></div>
+    </div>
+</div>
+<!-----------------------------Stage 5 Ends---------------------------->
+<!---------------------------------------------------------------------Bottom Buttons Starts------------------------------------------------------------------------>
+<div id="ButtonRowBottom" class="row" style="display: flex;">
+    <div class="col" style="display: flex; justify-content: left;">
+        <button id="BottomStagePrev" type="button" class="btn btn-primary" style="width: 150px; margin: 10px">Previous</button>
+    </div>
+    <div class="col" style="display: flex; justify-content: center;">
+        <div class="pill-nav">
+            <a href="#" class="active stage stage1" id="bPill-1">1</a>
+            <a href="#" class="stage stage2" id="bPill-2">2</a>
+            <a href="#" class="stage stage3" id="bPill-3">3</a>
+            <a href="#" class="stage stage4" id="bPill-4">4</a>
+            <a href="#" class="stage stage5" id="bPill-5">5</a>
+        </div>
+    </div>
+    <div class="col" style="display: flex; justify-content: right;">
+        <button id="BottomStageNext" type="button" class="btn btn-primary" style="width: 150px; margin: 10px">Next</button>
+    </div>
+</div>
+<!---------------------------------------------------------------------Bottom Buttons Ends-------------------------------------------------------------------------->
+
+
+
+
+
+
+
+<nav id="PostingBar" class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+            </ul>
+            <form class="d-flex">
+                <input id="fcPublishType" class="form-check-input fcPublishType" type="checkbox" value="" checked>
+                <p class="form-check-label fcPublishTypeLabel" for="fcPublishType">
+                    &nbsp;Publish Immediately
+                </p>
+                &nbsp;&nbsp;
+                <select class="form-select float-end" aria-label="Default select example">
+                    <option>Select</option>
+                    <option>Public</option>
+                    <option>Private</option>
+                    <option>Password Protected</option>
+                </select>
+                &nbsp;&nbsp;
+                <input type="date" class="form-control float-end" placeholder="Date to be published" />
+                &nbsp;&nbsp;
+                <input type="time" class="form-control float-end" placeholder="Time to be published" />
+                &nbsp;&nbsp;
+                <select class="form-select float-end" aria-label="Default select example">
+                    <option>Select</option>
+                    <option>Default</option>
+                    <option>Elementor Canvas</option>
+                    <option>Elementor Full Width</option>
+                    <option>Theme</option>
+                    <option>Block</option>
+                    <option>Custome</option>
+                </select>
+                &nbsp;&nbsp;
+                <button type="button" id="btnPublish" class="btn btn-primary float-end">Publish</button>
+                <script>
+                                    $("#btnPublish").click(function () {
+
+                                    var req = {
+                                    WebsiteUrl: $("#ddWebsites option:selected").attr("data-url"),
+                                    Username: $("#txtWpUser").val(),
+                                    ApplicationPassword: $("#txtWpAppPass").val(),
+                                    Title: $("#hdnTitle").val(),
+                                    Content: $("#view_content").html(),
+                                    SeoTitle: $("#txtSeoTitle").val(),
+                                    SeoDescription: $("#txtSeoDesc").val(),
+                                    CategoryId: parseInt($("#ddCategory").val()),
+                                    TagIds: 1,
+                                    FeaturedImageId: $("#hdnFeatImg").val()
+                                    };
+
+                                    let websiteId = $("#ddWebsites").val();
+                                    let title = $("#ShortName").val();
+                                    let content = $("#view_content").html();
+
+                                    let currentElement = $(this);
+
+                                    $.ajax({
+                                    url: "/Posting/CreatePostAsync",
+                                    method: "POST",
+                                    contentType: "application/json",
+                                    data: JSON.stringify({
+                                    WebsiteId: parseInt(websiteId),
+                                    Title: title,
+                                    Content: content
+                                    }),
+                                    success: function (postId) {
+                                    console.log("Post published with ID:", postId);
+
+                                    // optional message
+                                    alert("Post successfully published! ID: " + postId);
+                                    },
+                                    error: function (err) {
+                                    console.error(err);
+                                    alert("Failed to publish post.");
+                                    },
+                                    complete: function () {
+                                    console.log("Request completed");
+                                    },
+
+                                    // PROMISE CALLBACKS
+                                    done: function (res) {
+                                    console.log("Done (success only):", res);
+                                    },
+                                    fail: function (xhr) {
+                                    console.log("Fail (error only):", xhr.status);
+                                    },
+                                    always: function () {
+                                    console.log("Always executed (success or error)");
+                                    }
+                                    });
+                                    });
+                </script>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    const name = document.getElementById("Name");
+    const shortName = document.getElementById("ShortName");
+    const primaryKeyword = document.getElementById("PrimaryKeyword");
+    const secondaryKeyword = document.getElementById("SecondaryKeyword");
+
+    const stage = document.getElementById("Stage");
+    const stageOne = document.getElementById("StageOne");
+    const stageTwo = document.getElementById("StageTwo");
+    const stageThree = document.getElementById("StageThree");
+    const stageFour = document.getElementById("StageFour");
+    const stageFive = document.getElementById("StageFive");
+    const postingBar = document.getElementById("PostingBar");
+
+    const topStagePrev = document.getElementById("TopStagePrev");
+    const topStageNext = document.getElementById("TopStageNext");
+    const bottomStagePrev = document.getElementById("BottomStagePrev");
+    const bottomStageNext = document.getElementById("BottomStageNext");
+
+    // Show Only Show StageOne
+    stageOne.style.display = "flex"; // or "block" if you prefer full width
+    stageTwo.style.display = "none";
+    stageThree.style.display = "none";
+    stageFour.style.display = "none";
+    stageFive.style.display = "none";
+
+    topStagePrev.style.display = "none";
+    bottomStagePrev.style.display = "none";
+    topStageNext.style.display = "flex";
+    bottomStageNext.style.display = "flex";
+
+    postingBar.style.display = "none";
+
+    //Current Stage
+    let currentStage = parseInt(stage.value);
+
+
+    //Navigating
+    topStagePrev.addEventListener("click", function () {
+    currentStage = currentStage - 1;
+    stage.value = currentStage;
+    stageIndication(false);
+    let isOk = activateStage();
+    if(!isOk){
+    currentStage = currentStage + 1;
+    }
+    });
+
+    bottomStagePrev.addEventListener("click", function () {
+    currentStage = currentStage - 1;
+    stage.value = currentStage;
+    stageIndication(false);
+    let isOk = activateStage();
+    if(!isOk){
+    currentStage = currentStage + 1;
+    }
+    });
+
+    topStageNext.addEventListener("click", function () {
+    currentStage = currentStage + 1;
+    stage.value = currentStage;
+    stageIndication(true);
+    let isOk = activateStage();
+    if(!isOk){
+    currentStage = currentStage - 1;
+    }
+    });
+
+    bottomStageNext.addEventListener("click", function () {
+    currentStage = currentStage + 1;
+    stage.value = currentStage;
+    stageIndication(true);
+    let isOk = activateStage();
+    if(!isOk){
+    currentStage = currentStage - 1;
+    }
+    });
+
+    const htmlEntityCodec = (() => {
+    const textarea = document.createElement("textarea");
+    return {
+    encode(input = "") {
+    textarea.textContent = input;
+    return textarea.innerHTML;
+    },
+    decode(input = "") {
+    textarea.innerHTML = input;
+    return textarea.value;
+    }
+    };
+    })();
+
+    function stageIndication(isPositive) {
+    const lastTopStaging = document.getElementById("tPill-" + (currentStage - 1));
+    const lastBottomStaging = document.getElementById("bPill-" + (currentStage - 1));
+
+    const currentTopStaging = document.getElementById("tPill-" + currentStage);
+    const currentBottomStaging = document.getElementById("bPill-" + currentStage);
+
+    const nextTopStaging = document.getElementById("tPill-" + (currentStage + 1));
+    const nextBottomStaging = document.getElementById("bPill-" + (currentStage + 1));
+
+    if(isPositive) {
+    lastTopStaging.style.backgroundColor = "green";
+    lastTopStaging.style.color = "white";
+    lastBottomStaging.style.backgroundColor = "green";
+    lastBottomStaging.style.color = "white";
+
+    currentTopStaging.style.backgroundColor = "dodgerblue";
+    currentTopStaging.style.color = "white";
+    currentBottomStaging.style.backgroundColor = "dodgerblue";
+    currentBottomStaging.style.color = "white";
+    } else {
+    currentTopStaging.style.backgroundColor = "dodgerblue";
+    currentTopStaging.style.color = "white";
+    currentBottomStaging.style.backgroundColor = "dodgerblue";
+    currentBottomStaging.style.color = "white";
+
+    nextTopStaging.style.backgroundColor = "transparent";
+    nextTopStaging.style.color = "black";
+    nextBottomStaging.style.backgroundColor = "transparent";
+    nextBottomStaging.style.color = "black";
+    }
+    }
+
+    function stageOneActive() {
+    // Show Only Show StageOne
+    stageOne.style.display = "flex"; // or "block" if you prefer full width
+    stageTwo.style.display = "none";
+    stageThree.style.display = "none";
+    stageFour.style.display = "none";
+    stageFive.style.display = "none";
+
+    topStagePrev.style.display = "none";
+    bottomStagePrev.style.display = "none";
+    topStageNext.style.display = "flex";
+    bottomStageNext.style.display = "flex";
+
+    postingBar.style.display = "none";
+    }
+
+    function stageTwoActive() {
+    // Show Only Show StageTwo
+    stageOne.style.display = "none";
+    stageTwo.style.display = "flex";  // or "block" if you prefer full width
+    stageThree.style.display = "none";
+    stageFour.style.display = "none";
+    stageFive.style.display = "none";
+
+    topStagePrev.style.display = "flex";
+    bottomStagePrev.style.display = "flex";
+    topStageNext.style.display = "flex";
+    bottomStageNext.style.display = "flex";
+
+    postingBar.style.display = "none";
+
+    focusToSync();
+    }
+
+    function stageThreeActive() {
+    // Show Only StageThree
+    stageOne.style.display = "none";
+    stageTwo.style.display = "none";
+    stageThree.style.display = "flex";  // or "block" if you prefer full width
+    stageFour.style.display = "none";
+    stageFive.style.display = "none";
+
+    topStagePrev.style.display = "flex";
+    bottomStagePrev.style.display = "flex";
+    topStageNext.style.display = "flex";
+    bottomStageNext.style.display = "flex";
+
+    postingBar.style.display = "none";
+
+    populateAffiliateButtons();
+    }
+
+    function stageFourActive() {
+
+    // Show Only StageFour
+    stageOne.style.display = "none";
+    stageTwo.style.display = "none";
+    stageThree.style.display = "none";  // or "block" if you prefer full width
+    stageFour.style.display = "flex";
+    stageFive.style.display = "none";
+
+    topStagePrev.style.display = "flex";
+    bottomStagePrev.style.display = "flex";
+    topStageNext.style.display = "none";
+    bottomStageNext.style.display = "none";
+
+    postingBar.style.display = "flex";
+
+    //populateHtmlView();
+    }
+
+    function stageFiveActive() {
+    // Show Only StageFive
+    stageOne.style.display = "none";
+    stageTwo.style.display = "none";
+    stageThree.style.display = "none";
+    stageFour.style.display = "none";  // or "block" if you prefer full width
+    stageFive.style.display = "flex";
+
+    topStagePrev.style.display = "flex";
+    bottomStagePrev.style.display = "flex";
+    topStageNext.style.display = "none";
+    bottomStageNext.style.display = "none";
+
+    postingBar.style.display = "none";
+    }
+
+    function activateStage() {
+    if (currentStage == 1)
+    {
+    stageOneActive();
+    return true;
+    }
+    else if (currentStage == 2)
+    {
+    let CompanyId = $('#CompanyId').val();
+    if(CompanyId == 9)
+    {
+    let aiContent = tinymce.get("ai_content").getContent();
+
+    // // Check if OBreak exists
+    // if (!aiContent.includes("OBreak")) {
+    // alert("OBreak not found, Please use OBreak after first paragraph.");
+    // return false;
+    // }
+
+    // // Count OBuyButtons occurrences
+    // let oBuyButtonsCount = (aiContent.match(/OBuyButtons/g) || []).length;
+    // if (oBuyButtonsCount < 7) {
+    // alert("Minimum 7 OBuyButtons should be there, Please add more OBuyButtons tags.");
+    // return false;
+    // }
+    }
+
+    // Proceed if all validations pass
+    stageTwoActive();
+    return true;
+    }
+    else if (currentStage == 3)
+    {
+    stageThreeActive();
+    return true;
+    }
+    else if (currentStage == 4)
+    {
+    stageFourActive();
+    return true;
+    }
+    else {
+    stageFiveActive();
+    return true;
+    }
+    }
+
+    function populateAffiliateButtons() {
+    const contentId = $('#ContentId').val();
+    let buttons = '';
+    let currentElement = $(this);
+    if (contentId == 0) return;
+    $.ajax({
+    url: "/Posting/GetAffiliateLinks",
+    type: "GET",
+    data: { contentId: contentId },
+    success: function (data) {
+    $("#affiliate-buttons").empty(); //clear old buttons
+    data.forEach(item => {
+    let btn = `
+    <a href="${item.link}"
+    rel="nofollow sponsored"
+    target="_blank"
+    style="
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: ${item.backgroundColor};
+    color: ${item.textColor};
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    cursor: pointer;
+    ">
+    ${item.sellerName} - ₹${item.price}
+    </a>`;
+    buttons += btn;
+    $("#affiliate-buttons").append(btn);
+    });
+    },
+    complete: function () {
+    // console.log("✔ populateAffiliateButtons() completed.");
+    $("#ProductBuyButtons").val(buttons);
+    populateResultView();
+    },
+    error: function () {
+    alert("Error loading publishers.");
+    },
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    });
+    }
+
+    function populateHtmlView() {
+    // 🔥 VALIDATION CHECK
+    if (!validateForm()) {
+    return; // ❌ STOP if invalid
+    }
+    let html = $("#view_content").html();
+    
+    html = html.replace(/OTitle/g, $("#Title").val());
+    html = html.replace(/OLink/g, $("#Link").val());
+    html = html.replace(/OImageLink/g, $("#ImageLink").val());
+    html = html.replace(/OSlug/g, $("#Slug").val());
+
+    // $.post('/Posting/GenerateSlug', { title: $("#Hook").val() }, function(slug) {
+    //     html = html.replace(/OWordpressSlug/g, slug);
+    // });
+
+    html = html.replace(/OWordpressSlug/g, $("#HookSlug").val());
+    html = html.replace(/OShortName/g, $("#ShortName").val());
+    html = html.replace(/OPrimaryKeyword/g, $("#PrimaryKeyword").val());
+    html = html.replace(/OSecondaryKeywords/g, $("#SecondaryKeywords").val());
+    html = html.replace(/OTertiaryKeywords/g, $("#TertiaryKeywords").val());
+    html = html.replace(/OWebsite/g, "@Model.Website?.Url");
+    html = html.replace(/OHook/g, $("#Hook").val());
+    html = html.replace(/ODescription/g, $("#Description").val());
+    html = html.replace(/OAuthor/g, $("#Author").val());
+    html = html.replace(/ORobots/g, $("#Robots").val());
+    html = html.replace(/OLanguage/g, $("#Language").val());
+    html = html.replace(/ORevisit/g, $("#Revisit").val());
+
+    $("#edit_content").val(html);
+
+    // document.getElementById("contentMetaForm").submit();
+    submitFormAjax();
+    }
+
+    function populateResultView() {
+    // populateAffiliateButtons();
+    let html = $("#ProductHtml").val();
+
+    let aiContent = tinymce.get("ai_content").getContent();
+    let rightPanel = tinymce.get("ai_content").getContent().split("OBreak");
+    let htmlButtons = $("#ProductBuyButtons").val();
+    let introduction = $("#ai_content_introduction").val();
+    aiContent = aiContent.replace(/OBuyButtons/g, htmlButtons);
+
+
+    html = html.replace(/OImage1/g, $("#image_1").val());
+    html = html.replace(/OImage2/g, $("#image_2").val());
+    html = html.replace(/OImage3/g, $("#image_3").val());
+    html = html.replace(/OImage4/g, $("#image_4").val());
+    html = html.replace(/OImage5/g, $("#image_5").val());
+    html = html.replace(/OImage6/g, $("#image_6").val());
+    html = html.replace(/OImage7/g, $("#image_7").val());
+
+    html = html.replace(/OPrimaryKeyword/g, $("#PrimaryKeyword").val());
+    html = html.replace(/OSecondaryKeyword/g, $("#OSecondaryKeyword").val());
+
+    html = html.replace("OFullDescription", aiContent);
+    // html = html.replace("OFullDescription", rightPanel[1]);
+
+    console.log('Before Replace: ' + html);
+    // html = html.replace(/OBuyButtons/g, htmlButtons);
+    // html = html.replaceAll('OBuyButtons', String(htmlButtons));
+    html = html.replace(/OBuyButtons\s*/gi, htmlButtons);
+    console.log('After Replace: ' + html);
+
+    html = html.replace(/OArticleLink1/g, $("#article_link_1").val());
+    html = html.replace(/OArticleImageLink1/g, $("#article_image_1").val());
+    html = html.replace(/OArticleTitle1/g, $("#article_title_1").val());
+
+    html = html.replace(/OArticleLink2/g, $("#article_link_2").val());
+    html = html.replace(/OArticleImageLink2/g, $("#article_image_2").val());
+    html = html.replace(/OArticleTitle2/g, $("#article_title_2").val());
+
+    html = html.replace(/OArticleLink3/g, $("#article_link_3").val());
+    html = html.replace(/OArticleImageLink3/g, $("#article_image_3").val());
+    html = html.replace(/OArticleTitle3/g, $("#article_title_3").val());
+
+    html = html.replace(/OArticleLink4/g, $("#article_link_4").val());
+    html = html.replace(/OArticleImageLink4/g, $("#article_image_4").val());
+    html = html.replace(/OArticleTitle4/g, $("#article_title_4").val());
+
+    html = html.replace(/OProductLink1/g, $("#post_link_1").val());
+    html = html.replace(/OProductImageLink1/g, $("#post_image_1").val());
+    html = html.replace(/OProductTitle1/g, $("#post_title_1").val());
+
+    html = html.replace(/OProductLink2/g, $("#post_link_2").val());
+    html = html.replace(/OProductImageLink2/g, $("#post_image_2").val());
+    html = html.replace(/OProductTitle2/g, $("#post_title_2").val());
+
+    html = html.replace(/OProductLink3/g, $("#post_link_3").val());
+    html = html.replace(/OProductImageLink3/g, $("#post_image_3").val());
+    html = html.replace(/OProductTitle3/g, $("#post_title_3").val());
+
+    html = html.replace(/OProductLink4/g, $("#post_link_4").val());
+    html = html.replace(/OProductImageLink4/g, $("#post_image_4").val());
+    html = html.replace(/OProductTitle4/g, $("#post_title_4").val());
+
+    html = html.replace(/ORightPanel/g, introduction);
+
+    // $("#view_content").html(html);
+    $("#view_content").html(html);
+
+    BulkuUdateExternalLinks();
+    }
+</script>
+<script>
+    function generateHTML() {
+    alert("Generate HTML button clicked!");
+    //populateResultView();
+    // Your logic here
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+    let typingTimer;
+    const doneTypingInterval = 1000; // 1 second delay
+
+    tinymce.get("ai_content").setContent("");
+
+    $('#raw_content').on('focusout', function () {
+    // alert("Textarea focus lost!");
+    saveRawContent($(this));
+    });
+
+    $('#ai_content_introduction').on('focusout', function () {
+    // alert("Textarea focus lost!");
+    var data = tinymce.get("ai_content").getContent();
+    if(data != null){
+    saveAiContent($('ai_content_ifr'),data);
+    }
+    });
+
+    var data = tinymce.get("ai_content").getContent();
+    $('ai_content_ifr').on('focusout', function () {
+    // alert("Textarea focus lost!");
+    saveAiContent($(this),data);
+    });
+
+    function saveRawContent(currentElement) {
+    const contentId = $('#ContentId').val();
+    const contentValue = $('#raw_content').val();
+
+    if (contentValue.trim() === '') return;
+
+    // $('#save-status').text('Saving...');
+
+    // Create JSON object with all columns
+    const contentData = {
+    ContentId: contentId,                    // for new record
+    // ContentRaw: contentValue,             // from textarea
+    Value: contentValue,                     // from textarea
+    Id: 0,                                   // optional internal ID
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    };
+    // let currentElement = $(this);
+
+    $.ajax({
+    url: '@Url.Action("SaveRawContent", "Posting")',
+    type: 'POST',
+    // contentType: 'application/json',
+    // data: JSON.stringify(contentData),
+    data: { contentRaw: contentData},
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    currentElement.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    currentElement.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    currentElement.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error Saving Raw Content.");
+    // ON ERROR
+    currentElement.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    //currentElement.css("border", "2px solid green");
+    },
+
+    // PROMISE CALLBACKS
+    done: function (response) {
+    console.log("Done (success only):", response);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    // error: function (xhr) {
+    //     $('#save-status').text('Error saving content!');
+    // }
+    });
+    }
+
+    populateAffiliateLinks();
+    populateImagesLinks();
+    populateVideosLinks();
+    populateSocialsLinks();
+    populateReferencesArticleLinks();
+    populateReferencesPostLinks();
+    populateExternalLinks();
+    });
+
+    function focusToSync(){
+    document.getElementById("image_1").focus();
+
+    //Articles
+    document.getElementById("article_title_1").focus();
+    // document.getElementById("article_link_1").focus();
+    // document.getElementById("article_image_1").focus();
+
+    document.getElementById("article_title_2").focus();
+    // document.getElementById("article_link_2").focus();
+    // document.getElementById("article_image_2").focus();
+
+    document.getElementById("article_title_3").focus();
+    // document.getElementById("article_link_3").focus();
+    // document.getElementById("article_image_3").focus();
+
+    //Posts
+    document.getElementById("post_title_1").focus();
+    // document.getElementById("post_link_1").focus();
+    // document.getElementById("post_image_1").focus();
+
+    document.getElementById("post_title_2").focus();
+    // document.getElementById("post_link_2").focus();
+    // document.getElementById("post_image_2").focus();
+
+    document.getElementById("post_title_3").focus();
+    // document.getElementById("post_link_3").focus();
+    // document.getElementById("post_image_3").focus();
+
+    document.getElementById("article_title_4").focus();
+    document.getElementById("post_title_4").focus();
+
+    document.getElementById("image_1").focus();
+    }
+
+    function saveAiContent(currentElement, data) {
+    const contentId = $('#ContentId').val();
+    const introduction = $('#ai_content_introduction').val();
+    const contentValue = data;
+
+    if (contentValue.trim() === '') return;
+
+    // $('#save-status').text('Saving...');
+
+    // Create JSON object with all columns
+    const contentData = {
+    ContentId: contentId,                    // for new record
+    // ContentRaw: contentValue,             // from textarea
+    Introduction: introduction,              // from textarea
+    Value: contentValue,                     // from textarea
+    Id: 0,                                   // optional internal ID
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    };
+
+    // let $('ai_content_ifr') = $(this);
+    let intro = $('#ai_content_introduction');
+    let editor = tinymce.activeEditor || tinymce.get('ai_content'); // replace with your ID if needed
+    let $editorContainer = $( editor.getContainer() ); // wrapper DOM for TinyMCE UI
+
+    $.ajax({
+    url: '@Url.Action("SaveAiContent", "Posting")',
+    type: 'POST',
+    // contentType: 'application/json',
+    // data: JSON.stringify(contentData),
+    data: { contentAi: contentData},
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    intro.css("border", "3px solid green");
+    $editorContainer.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    intro.css("border", "3px solid #00ffff");
+    $editorContainer.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    intro.css("border", "3px solid blue");
+    $editorContainer.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error Saving AI Content and Introduction.");
+    // ON ERROR
+    $editorContainer.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    //$editorContainer.css("border", "2px solid green");
+    },
+
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    // error: function (xhr) {
+    //     $('#save-status').text('Error saving content!');
+    // }
+    });
+    }
+
+    function collectAffiliateData() {
+    const contentId = $('#ContentId').val();
+    let affiliateData = [];
+
+    // Find all price inputs
+    $("input[id^='af_price_']").each(function () {
+    let id = this.id.replace("af_price_", "");                 // extract 23
+    let price = $(this).val();
+    let link = $("#af_link_" + id).val();                      // matching link input
+    let seller_name = $("#af_seller_name_" + id).val();        // matching link input
+
+    affiliateData.push({
+    Id: 0,
+    Price: price,
+    Link: htmlEntityCodec.decode(link),
+    SellerName: htmlEntityCodec.decode(seller_name),
+    SellerEntityId: parseInt(id),
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    });
+    });
+
+    return affiliateData;
+    }
+
+    function collectAffiliateSingleData(currentElement) {
+    const contentId = $('#ContentId').val();
+
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[2];                        // extract 23
+    //let id = idString.replace("af_price_", "");           // extract 23
+    let price = $("#af_price_" + id).val();
+    let link = htmlEntityCodec.decode($("#af_link_" + id).val());                   // matching link input
+    let seller_name = htmlEntityCodec.decode($("#af_seller_name_" + id).val());     // matching link input
+
+    let affiliateData = {
+    Id: 0,
+    Price: price,
+    Link: link,
+    SellerName: seller_name,
+    SellerEntityId: parseInt(id),
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    };
+
+    return affiliateData;
+    }
+
+    // $("#saveBtn").on("click", function () {
+    $('.affiliate').on('focusout', function () {
+    let currentElement = $(this);
+    let dataToSend = collectAffiliateSingleData(currentElement);
+
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[2];                        // extract 23
+    // let id = idString.replace("af_price_", "");          // extract 23
+    let price = $("#af_price_" + id);
+    let link = $("#af_link_" + id);                   // matching link input
+    let seller_name = $("#af_seller_name_" + id);     // matching link input
+
+    $.ajax({
+    url: "/Posting/SaveAffiliateSingleData",
+    type: "POST",
+    // contentType: "application/json",
+    data: { contentLinksAffiliate: dataToSend },
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    currentElement.css("border", "3px solid green");
+    link.css("border", "3px solid green");
+    price.css("border", "3px solid green");
+    // seller_name.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    currentElement.css("border", "3px solid #00ffff");
+    link.css("border", "3px solid #00ffff");
+    price.css("border", "3px solid #00ffff");
+    // seller_name.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    currentElement.css("border", "3px solid blue");
+    link.css("border", "3px solid blue");
+    price.css("border", "3px solid blue");
+    // seller_name.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error loading publishers.");
+    // ON ERROR
+    currentElement.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    //currentElement.css("border", "2px solid green");
+    },
+
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    });
+    });
+
+    // // $("#saveBtn").on("click", function () {
+    // $('.affiliate').on('focusout', function () {
+    //     let currentElement = $(this);
+    //     let dataToSend = collectAffiliateData();
+    //     $.ajax({
+    //         url: "/Posting/SaveAffiliateData",
+    //         type: "POST",
+    //         // contentType: "application/json",
+    //         data: { contentLinksAffiliates: dataToSend },
+    //         success: function (response) {
+    //             // ON 200 OK
+    //             if (response.status === "inserted") {
+    //                 console.log("Inserted:", response.id);
+    //                 currentElement.css("border", "3px solid green");
+    //             }
+    //             else if (response.status === "updated") {
+    //                 console.log("Updated:", response.id);
+    //                 currentElement.css("border", "3px solid blue");
+    //             }
+    //         },
+    //         error: function () {
+    //             alert("Error loading publishers.");
+    //             // ON ERROR
+    //             currentElement.css("border", "2px solid red");
+    //         },
+    //         complete: function () {
+    //             // AFTER SUCCESS OR ERROR
+    //             console.log("Request completed");
+    //             currentElement.css("border", "2px solid green");
+    //         },
+
+    //         // PROMISE CALLBACKS
+    //         done: function (res) {
+    //             console.log("Done (success only):", res);
+    //         },
+    //         fail: function (xhr) {
+    //             console.log("Fail (error only):", xhr.status);
+    //         },
+    //         always: function () {
+    //             console.log("Always executed (success or error)");
+    //         }
+    //     });
+    // });
+
+    function collectImageLinks() {
+    const contentId = $('#ContentId').val();
+    let imageLinks = [];
+
+    // Find all price inputs
+    $("input[id^='image_']").each(function () {
+    let id = this.id.replace("image_", "");   // extract 23
+    let link = $(this).val();
+    // let link = $("#af_link_" + id).val();        // matching link input
+
+    imageLinks.push({
+    Id: 0,
+    Link: htmlEntityCodec.decode(link),
+    MediaTypeId: 0,
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    });
+    });
+
+    return imageLinks;
+    }
+
+    function collectImageSingleLink(currentElement) {
+    const contentId = $('#ContentId').val();
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[1];                        // extract 23
+    // let id = this.id.replace("image_", "");   // extract 23
+    let link = $("#image_" + id).val();
+    // let link = $("#af_link_" + id).val();        // matching link input
+
+    let imageLinks = {
+    Id: 0,
+    Link: htmlEntityCodec.decode(link),
+    MediaTypeId: 0,
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    }
+
+    return imageLinks;
+    }
+
+    // $("#saveBtn").on("click", function () {
+    $('.eximage').on('focusout', function () {
+    let currentElement = $(this);
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[1];                        // extract 23
+    let link = $("#image_" + id);
+    let dataToSend = collectImageSingleLink(currentElement);
+    $.ajax({
+    url: "/Posting/SaveImageSingleLink",
+    type: "POST",
+    // contentType: "application/json",
+    data: dataToSend,
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    currentElement.css("border", "3px solid green");
+    link.css("border", "3px solid green");
+    // price.css("border", "3px solid green");
+    // seller_name.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    currentElement.css("border", "3px solid #00ffff");
+    link.css("border", "3px solid #00ffff");
+    // price.css("border", "3px solid #00ffff");
+    // seller_name.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    currentElement.css("border", "3px solid blue");
+    link.css("border", "3px solid blue");
+    // price.css("border", "3px solid blue");
+    // seller_name.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error loading publishers.");
+    // ON ERROR
+    currentElement.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    //currentElement.css("border", "2px solid green");
+    },
+
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    });
+    });
+
+    // function collectVideoLinks() {
+    //     const contentId = $('#ContentId').val();
+    //     let imageLinks = [];
+
+    //     // Find all price inputs
+    //         let id = this.id.replace("video_", "");   // extract 23
+    //         let link = $(this).val();
+    //         // let link = $("#af_link_" + id).val();        // matching link input
+
+    //     let imageLinks = {
+    //         Id: 0,
+    //         Link: link,
+    //         MediaTypeId: 1,
+    //         ContentId: contentId,
+    //         CompanyId: 9,
+    //         UserId: 1,
+    //         Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    //         Identity: "System",                      // or current user
+    //         Status: 1,                               // set your default status
+    //         Tenant: 1,                               // replace with actual tenant
+    //         CreatedBy: 1,                            // or current logged-in user
+    //         CreationDate: new Date().toISOString(),  // current timestamp
+    //         ModifiedBy: 1,                           // or current user
+    //         ModifiedDate: new Date().toISOString()   // current timestamp
+    //     }
+
+    //     return imageLinks;
+    // }
+
+    function collectVideoSingleLink(currentElement) {
+    const contentId = $('#ContentId').val();
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[1];                        // extract 23
+    // let id = this.id.replace("image_", "");   // extract 23
+    let link = $("#video_" + id).val();
+    // let link = $("#af_link_" + id).val();        // matching link input
+
+    let imageLinks = {
+    Id: 0,
+    Link: htmlEntityCodec.decode(link),
+    MediaTypeId: 1,
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    }
+    return imageLinks;
+    }
+
+    // $("#saveBtn").on("click", function () {
+    $('.exvideo').on('focusout', function () {
+    let currentElement = $(this);
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[1];                        // extract 23
+    let link = $("#video_" + id);
+    let dataToSend = collectVideoSingleLink(currentElement);
+    $.ajax({
+    url: "/Posting/SaveVideoSingleLink",
+    type: "POST",
+    // contentType: "application/json",
+    data: dataToSend,
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    currentElement.css("border", "3px solid green");
+    link.css("border", "3px solid green");
+    // price.css("border", "3px solid green");
+    // seller_name.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    currentElement.css("border", "3px solid #00ffff");
+    link.css("border", "3px solid #00ffff");
+    // price.css("border", "3px solid #00ffff");
+    // seller_name.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    currentElement.css("border", "3px solid blue");
+    link.css("border", "3px solid blue");
+    // price.css("border", "3px solid blue");
+    // seller_name.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error loading publishers.");
+    // ON ERROR
+    currentElement.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    //currentElement.css("border", "2px solid green");
+    },
+
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    });
+    });
+
+    // function collectSocialLinks() {
+    //     const contentId = $('#ContentId').val();
+    //     let idString = currentElement[0].id;                    // extract 23
+    //  let id = idString.split('_')[1];
+    //     let link = $("#social_" + id).val();
+    //     let imageLinks = {
+    //         Id: 0,
+    //         Link: htmlEntityCodec.decode(link),
+    //         SocialMediaTypeId: id,
+    //         ContentId: contentId,
+    //         CompanyId: 9,
+    //         UserId: 1,
+    //         Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    //         Identity: "System",                      // or current user
+    //         Status: 1,                               // set your default status
+    //         Tenant: 1,                               // replace with actual tenant
+    //         CreatedBy: 1,                            // or current logged-in user
+    //         CreationDate: new Date().toISOString(),  // current timestamp
+    //         ModifiedBy: 1,                           // or current user
+    //         ModifiedDate: new Date().toISOString()   // current timestamp
+    //     }
+
+    //     return imageLinks;
+    // }
+
+    function collectSocialSingleLink(currentElement) {
+    const contentId = $('#ContentId').val();
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[1];                        // extract 23
+    let link = $("#social_" + id);
+    // let id = this.id.replace("image_", "");   // extract 23
+    let imageLinks = {
+    Id: 0,
+    Link: htmlEntityCodec.decode(link),
+    SocialMediaTypeId: id,
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    }
+
+    return imageLinks;
+    }
+
+    $('.exsocial').on('focusout', function () {
+    alert("Called");
+    let currentElement = $(this);
+    let idString = currentElement[0].id;
+    let dataToSend = collectSocialSingleLink(currentElement);
+    let id = idString.split('_')[1];                        // extract 23
+    let link = $("#social_" + id);
+    $.ajax({
+    url: "/Posting/SaveSocialSinglenLink",
+    type: "POST",
+    // contentType: "application/json",
+    data: dataToSend,
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    currentElement.css("border", "3px solid green");
+    link.css("border", "3px solid green");
+    // price.css("border", "3px solid green");
+    // seller_name.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    currentElement.css("border", "3px solid #00ffff");
+    link.css("border", "3px solid #00ffff");
+    // price.css("border", "3px solid #00ffff");
+    // seller_name.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    currentElement.css("border", "3px solid blue");
+    link.css("border", "3px solid blue");
+    // price.css("border", "3px solid blue");
+    // seller_name.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error loading publishers.");
+    // ON ERROR
+    currentElement.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    //currentElement.css("border", "2px solid green");
+    },
+
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    });
+    });
+
+    function collectArticlesLinks() {
+    const contentId = $('#ContentId').val();
+    let articleLinks = [];
+
+    // Find all price inputs
+    $("input[id^='article_title_']").each(function () {
+    let id = this.id.replace("article_title_", "");   // extract 23
+    let title = $("#article_title_" + id).val();
+    let image = $("#article_image_" + id).val();
+    let link = $("#article_link_" + id).val();
+    articleLinks.push({
+    Id: 0,
+    Title: htmlEntityCodec.decode(title),
+    ImageLink: htmlEntityCodec.decode(image),
+    Link: htmlEntityCodec.decode(link),
+    ReferenceTypeId: 0,
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    });
+    });
+    return articleLinks;
+    }
+
+    function collectArticleSingleLink(currentElement) {
+    const contentId = $('#ContentId').val();
+
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[2];                        // extract 23
+    let title = $("#article_title_" + id).val();
+    let image = $("#article_image_" + id).val();
+    let link = $("#article_link_" + id).val();
+
+    let articleLinks = {
+    Id: 0,
+    Title: htmlEntityCodec.decode(title),
+    ImageLink: htmlEntityCodec.decode(image),
+    Link: htmlEntityCodec.decode(link),
+    ReferenceTypeId: 0,
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    }
+    return articleLinks;
+    }
+
+
+    // $("#saveBtn").on("click", function () {
+    $('.article').on('focusout', function () {
+    let currentElement = $(this);
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[2];                        // extract 23
+    let title = $("#article_title_" + id);
+    let image = $("#article_image_" + id);
+    let link = $("#article_link_" + id);
+    let dataToSend = collectArticleSingleLink(currentElement);
+    $.ajax({
+    url: "/Posting/SaveArticleSingleData",
+    type: "POST",
+    // contentType: "application/json",
+    data: dataToSend,
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    currentElement.css("border", "3px solid green");
+    title.css("border", "3px solid green");
+    image.css("border", "3px solid green");
+    link.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    currentElement.css("border", "3px solid #00ffff");
+    title.css("border", "3px solid #00ffff");
+    image.css("border", "3px solid #00ffff");
+    link.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    currentElement.css("border", "3px solid blue");
+    title.css("border", "3px solid blue");
+    image.css("border", "3px solid blue");
+    link.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error loading publishers.");
+    // ON ERROR
+    currentElement.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    //currentElement.css("border", "2px solid green");
+    },
+
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    });
+    });
+
+    function collectPostSingleLink(currentElement) {
+    const contentId = $('#ContentId').val();
+
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[2];                        // extract 23
+    let title = $("#post_title_" + id).val();
+    let image = $("#post_image_" + id).val();
+    let link = $("#post_link_" + id).val();
+
+    let postLinks = {
+    Id: 0,
+    Title: htmlEntityCodec.decode(title),
+    ImageLink: htmlEntityCodec.decode(image),
+    Link: htmlEntityCodec.decode(link),
+    ReferenceTypeId: 1,
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    }
+    return postLinks;
+    }
+
+
+    // $("#saveBtn").on("click", function () {
+    $('.post').on('focusout', function () {
+    let currentElement = $(this);
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[2];                        // extract 23
+    let title = $("#post_title_" + id);
+    let image = $("#post_image_" + id);
+    let link = $("#post_link_" + id);
+    let dataToSend = collectPostSingleLink(currentElement);
+    $.ajax({
+    url: "/Posting/SavePostSingleData",
+    type: "POST",
+    // contentType: "application/json",
+    data: dataToSend,
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    currentElement.css("border", "3px solid green");
+    title.css("border", "3px solid green");
+    image.css("border", "3px solid green");
+    link.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    currentElement.css("border", "3px solid #00ffff");
+    title.css("border", "3px solid #00ffff");
+    image.css("border", "3px solid #00ffff");
+    link.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    currentElement.css("border", "3px solid blue");
+    title.css("border", "3px solid blue");
+    image.css("border", "3px solid blue");
+    link.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error loading publishers.");
+    // ON ERROR
+    currentElement.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    //currentElement.css("border", "2px solid green");
+    },
+
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    });
+    });
+
+    // function collectPostLinks() {
+    //     const contentId = $('#ContentId').val();
+    //     let postLinks = [];
+
+    //     // Find all price inputs
+    //     $("input[id^='post_title_']").each(function () {
+    //         let id = this.id.replace("post_title_", "");   // extract 23
+    //         let title = $("#post_title_" + id).val();
+    //         let image = $("#post_image_" + id).val();
+    //         let link = $("#post_link_" + id).val();
+    //         postLinks.push({
+    //             Id: 0,
+    //             Title: htmlEntityCodec.decode(title),
+    //             ImageLink: htmlEntityCodec.decode(image),
+    //             Link: htmlEntityCodec.decode(link),
+    //             ReferenceTypeId: 1,
+    //             ContentId: contentId,
+    //             CompanyId: 9,
+    //             UserId: 1,
+    //             Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    //             Identity: "System",                      // or current user
+    //             Status: 1,                               // set your default status
+    //             Tenant: 1,                               // replace with actual tenant
+    //             CreatedBy: 1,                            // or current logged-in user
+    //             CreationDate: new Date().toISOString(),  // current timestamp
+    //             ModifiedBy: 1,                           // or current user
+    //             ModifiedDate: new Date().toISOString()   // current timestamp
+    //         });
+    //     });
+    //     return postLinks;
+    // }
+
+    // // $("#saveBtn").on("click", function () {
+    // $('.post').on('focusout', function () {
+    //     let currentElement = $(this);
+    //     let dataToSend = collectPostLinks();
+    //     $.ajax({
+    //         url: "/Posting/SavePostData",
+    //         type: "POST",
+    //         // contentType: "application/json",
+    //         data: { contentLinksReferences: dataToSend },
+    //         success: function (res) {
+    //             console.log("Saved", res);
+    //         },
+    //         error: function () {
+    //             alert("Error loading publishers.");
+    //         },
+    //         complete: function () {
+    //             console.log("Request completed");
+    //         },
+
+    //         // PROMISE CALLBACKS
+    //         done: function (res) {
+    //             console.log("Done (success only):", res);
+    //         },
+    //         fail: function (xhr) {
+    //             console.log("Fail (error only):", xhr.status);
+    //         },
+    //         always: function () {
+    //             console.log("Always executed (success or error)");
+    //         }
+    //     });
+    // });
+
+
+    // function collectExternalLinksData() {
+    //     const contentId = $('#ContentId').val();
+    //     let externalLinksData = [];
+
+    //     // Find all price inputs
+    //     $("input[id^='wordOrSentence']").each(function () {
+    //         let id = this.id.replace("wordOrSentence", "");   // extract 23
+    //         let Wordorsentense = $(this).val();
+    //         let link = $("#backLink" + id).val();        // matching link input
+    //         // let seller_name = $("#af_seller_name_" + id).val();        // matching link input
+
+    //         externalLinksData.push({
+    //             Id: 0,
+    //             Link: link,
+    //             // SellerName: seller_name,
+    //             WordOrSentense: Wordorsentense,
+    //             ContentId: contentId,
+    //             CompanyId: 9,
+    //             UserId: 1,
+    //             Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    //             Identity: "System",                      // or current user
+    //             Status: 1,                               // set your default status
+    //             Tenant: 1,                               // replace with actual tenant
+    //             CreatedBy: 1,                            // or current logged-in user
+    //             CreationDate: new Date().toISOString(),  // current timestamp
+    //             ModifiedBy: 1,                           // or current user
+    //             ModifiedDate: new Date().toISOString()   // current timestamp
+    //         });
+    //     });
+    //     return externalLinksData;
+    // }
+
+    // $('.external_links').on('focusout', function () {
+    //     let currentElement = $(this);
+    //     let dataToSend = collectExternalSingleLinkData();
+    //     $.ajax({
+    //         url: "/Posting/SaveExternalLinksData",
+    //         type: "POST",
+    //         // contentType: "application/json",
+    //         data: dataToSend,
+    //         success: function (res) {
+    //             console.log("Saved", res);
+    //         },
+    //         error: function (xhr) {
+    //             console.log("Error:", xhr.responseText);
+    //         },
+    //         complete: function () {
+    //             console.log("Request completed");
+    //         },
+
+    //         // PROMISE CALLBACKS
+    //         done: function (res) {
+    //             console.log("Done (success only):", res);
+    //         },
+    //         fail: function (xhr) {
+    //             console.log("Fail (error only):", xhr.status);
+    //         },
+    //         always: function () {
+    //             console.log("Always executed (success or error)");
+    //         }
+    //     });
+    // });
+
+    function collectExternalSingleLinkData(currentElement) {
+    const contentId = $('#ContentId').val();
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[1];                        // extract 23
+    let Wordorsentense = $("#wordOrSentence_" + id).val();
+    let link = $("#backLink_" + id).val();                  // matching link input
+    let externalLinksData = {
+    Id: 0,
+    Link: htmlEntityCodec.decode(link),
+    WordOrSentense: htmlEntityCodec.decode(Wordorsentense),
+    ContentId: contentId,
+    CompanyId: 9,
+    UserId: 1,
+    Guid: self.crypto.randomUUID(),          // generates a unique GUID in JS
+    Identity: "System",                      // or current user
+    Status: 1,                               // set your default status
+    Tenant: 1,                               // replace with actual tenant
+    CreatedBy: 1,                            // or current logged-in user
+    CreationDate: new Date().toISOString(),  // current timestamp
+    ModifiedBy: 1,                           // or current user
+    ModifiedDate: new Date().toISOString()   // current timestamp
+    };
+    return externalLinksData;
+    }
+
+    $('.external_links').on('focusout', function () {
+    let currentElement = $(this);
+
+    let idString = currentElement[0].id;                    // extract 23
+    let id = idString.split('_')[1];                        // extract 23
+    let Wordorsentense = $("#wordOrSentence_" + id);
+    let link = $("#backLink_" + id);                        // matching link input
+    let dataToSend = collectExternalSingleLinkData(currentElement);
+
+    $.ajax({
+    url: "/Posting/SaveExternalSingleLinkData",
+    type: "POST",
+    data: dataToSend,
+    success: function (response) {
+    // ON 200 OK
+    if (response.status === "inserted") {
+    console.log("Inserted:", response.id);
+    currentElement.css("border", "3px solid green");
+    link.css("border", "3px solid green");
+    Wordorsentense.css("border", "3px solid green");
+    }
+    else if (response.status === "updated") {
+    console.log("Updated:", response.id);
+    currentElement.css("border", "3px solid #00ffff");
+    link.css("border", "3px solid #00ffff");
+    Wordorsentense.css("border", "3px solid #00ffff");
+    }
+    else if (response.status === "skipped") {
+    console.log("Skipped:", response.id);
+    currentElement.css("border", "3px solid blue");
+    link.css("border", "3px solid blue");
+    Wordorsentense.css("border", "3px solid blue");
+    }
+    },
+    error: function () {
+    alert("Error loading publishers.");
+    // ON ERROR
+    currentElement.css("border", "2px solid red");
+    },
+    complete: function () {
+    // AFTER SUCCESS OR ERROR
+    console.log("Request completed");
+    updateExternalLinks(Wordorsentense, link);
+    //alert("Target: " + Wordorsentense + ", Value: " + link);
+    },
+
+    // PROMISE CALLBACKS
+    done: function (res) {
+    console.log("Done (success only):", res);
+    },
+    fail: function (xhr) {
+    console.log("Fail (error only):", xhr.status);
+    },
+    always: function () {
+    console.log("Always executed (success or error)");
+    }
+    });
+    });
+
+    function updateExternalLinks(target, value) {
+    let targetText = target.val().trim();
+    let valueText = value.val().trim();
+    if(targetText != '' && valueText != ''){
+    let viewHtml = $("#view_content").html();
+    // Create the link
+    let link = "<a href='" + valueText + "' style='text-decoration: none; color: blue' target='_blank'>" + targetText + "</a>";
+    // Replace occurrences of the target
+    viewHtml = viewHtml.replace(new RegExp(targetText, "g"), link);
+    $("#view_content").html(viewHtml);
+    }
+    }
+
+    function BulkuUdateExternalLinks() {
+    $("input[id^='wordOrSentence']").each(function () {
+    let id = this.id.replace("wordOrSentence", "");
+    let Wordorsentense = $(this);
+    let link = $("#backLink" + id);
+    updateExternalLinks(Wordorsentense, link);
+    });
+    }
+
+    function populateAffiliateLinks() {
+    @foreach (var item in Model.ContentLinksAffiliates)
+    {
+        <text>
+            $("#af_price_" + @item.SellerEntityId).val(@item.Price);
+            $("#af_link_" + @item.SellerEntityId).val("@item.Link");
+        </text>
+    }
+    }
+
+    function populateImagesLinks() {
+    @{
+        int itrImages = 1;
+    }
+    @foreach (var item in Model.ContentLinksMedias.Where(x => x.MediaTypeId == 0).ToList())
+    {
+        <text>
+            $("#image_" + @itrImages).val("@item.Link");
+        </text>
+        itrImages++;
+    }
+    }
+
+    function populateVideosLinks() {
+    @{
+        int itrVideos = 1;
+    }
+    @foreach (var item in Model.ContentLinksMedias.Where(x => x.MediaTypeId == 1).ToList())
+    {
+        <text>
+            $("#video_" + @itrVideos).val("@item.Link");
+        </text>
+        itrVideos++;
+    }
+    }
+
+    function populateSocialsLinks() {
+    @{
+        int itrSocials = 1;
+    }
+    @foreach (var item in Model.ContentLinksSocials.ToList())
+    {
+        <text>
+            $("#social_" + @itrSocials).val("@item.Link");
+        </text>
+        itrSocials++;
+    }
+    }
+
+    function populateReferencesArticleLinks() {
+    @{
+        int itrArticle = 1;
+    }
+    @foreach (var item in Model.ContentLinksReferences.Where(x => x.ReferenceTypeId == 0).ToList())
+    {
+        <text>
+            $("#article_title_" + @itrArticle).val("@item.Title");
+            $("#article_image_" + @itrArticle).val("@item.ImageLink");
+            $("#article_link_" + @itrArticle).val("@item.Link");
+        </text>
+        itrArticle++;
+    }
+    }
+
+    function populateReferencesPostLinks() {
+    @{
+        int itrPosts = 1;
+    }
+    @foreach (var item in Model.ContentLinksReferences.Where(x => x.ReferenceTypeId == 1).ToList())
+    {
+        <text>
+            $("#post_title_" + @itrPosts).val("@item.Title");
+            $("#post_image_" + @itrPosts).val("@item.ImageLink");
+            $("#post_link_" + @itrPosts).val("@item.Link");
+        </text>
+        itrPosts++;
+    }
+    }
+
+    function populateExternalLinks() {
+    @{
+        int itrExternalLinks = 1;
+    }
+    @foreach (var item in Model.ContentLinksExternals.ToList())
+    {
+        <text>
+            $("#wordOrSentence_" + @itrExternalLinks).val("@item.WordOrSentense");
+            $("#backLink_" + @itrExternalLinks).val("@item.Link");
+        </text>
+        itrExternalLinks++;
+    }
+    }
+</script>
+<script>
+    tinymce.init({
+    selector: '#edit_contentt,#ai_content',
+    setup: function (editor) {
+    editor.on('blur', function () {
+    let content = editor.getContent();
+    saveAiContent($(this),content);
+    });
+    }
+    });
+</script>

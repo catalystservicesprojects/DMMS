@@ -1,0 +1,633 @@
+﻿@model IEnumerable<DMMS.Models.ViewModels.Contents.ContentListSEO>
+@using Microsoft.AspNetCore.Http;
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="margin: 1px">SEO Posts List</h1>
+<style>
+    input[type="search"]{
+        width: 1000px;
+    }
+.hidden {
+    display: none;
+}
+.play-btn {
+  position: relative;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.play-btn::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid white;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+.play-btn:hover {
+  background-color: #0056b3;
+}
+
+.linkText{
+  text-decoration: none;
+}
+
+.modal {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+}
+
+.modal-backdrop {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.main-wrapper {
+    position: static !important;
+}
+
+body.modal-open {
+    overflow: hidden;
+    padding-right: 0 !important;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal {
+    z-index: 1055 !important;
+}
+
+.modal-backdrop {
+    width: 100% !important;
+    height: 100% !important;
+}
+</style>
+
+
+<p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Create New Post
+    </button>
+    @* <a href="@Url.Action("Create", "Contents")">Create New Post</a> *@
+</p>
+<table id="dtable" class="table">
+    <thead>
+        <tr>
+            <th>
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content.ShortName)
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.Alias) *@
+                Primary Keyword
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.ShortDescription) *@
+                Secondary Keywords
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Guid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Identity)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Content.Status)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Tenant)
+            </th> *@
+@*             <th>
+                @Html.DisplayNameFor(model => model.Content.CreatedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content.CreationDate)
+            </th> *@
+@*             <th>
+                @Html.DisplayNameFor(model => model.Content.ModifiedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content.ModifiedDate)
+            </th> *@
+            <th style="width: 150px"></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <img src="@Html.DisplayFor(modelItem => item.ContentLinksMedia.Link)" style="width:60px; height:70px; cursor:pointer;" onclick="showImageModal('@Html.DisplayFor(modelItem => item.ContentLinksMedia.Link)')" />
+                @* <img src="@Html.DisplayFor(modelItem => item.ContentLinksMedia.Link)" style="width: 70px; height: 70px"/> *@
+                @* <a href="@Url.Action("PostBuilder", "Posting", new {ContentId = item.Content.Id})" class="play-btn">Edit</a> *@
+            </td>
+            <td>
+                <a href="@Url.Action("PostBuilder", "Posting", new {ContentId = item.Content.Id, 
+                    WebsiteId = item.Content.WebsiteId,
+                    UserId = item.Content.UserId,
+                    Mode = "Edit"})" class="linkText">@Html.DisplayFor(modelItem => item.Content.Name)</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content.ShortName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content.Alias)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content.ShortDescription)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.Guid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Identity)
+            </td> *@
+            <td>
+                @{
+                    if(item.Content.Status == 0)
+                    {
+                        <button type="button" class="btn btn-primary">Not Active</button>
+                    } 
+                    else if (item.Content.Status == 1)
+                    {
+                        <button type="button" class="btn btn-success">Active</button>
+                    }
+                    else if (item.Content.Status == 2)
+                    {
+                        <button type="button" class="btn btn-danger">Deleted</button>
+                    }
+                }
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.Tenant)
+            </td> *@
+@*             <td>
+                @Html.DisplayFor(modelItem => item.Content.CreatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content.CreationDate)
+            </td> *@
+@*             <td>
+                @Html.DisplayFor(modelItem => item.Content.ModifiedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content.ModifiedDate)
+            </td> *@
+            <td>
+                <a href="@Url.Action("PostBuilder", "Posting", new {ContentId = item.Content.Id, 
+                    WebsiteId = item.Content.WebsiteId,
+                    UserId = item.Content.UserId,
+                    Mode = "Edit"})" class="btn btn-warning" style="text-decoration: none">SEO</a>
+                @* <a href="#" class="btn btn-primary">SMO</a> *@
+            </td>
+            @* <td>
+                <a href="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a href="Details" asp-route-id="@item.Id">Details</a> |
+                <a href="Delete" asp-route-id="@item.Id">Delete</a>
+            </td> *@
+        </tr>
+}
+    </tbody>
+</table>
+@* <div class="container mt-3">
+  <h3>Large Modal Example</h3>
+  <p>Click on the button to open the modal.</p>
+  
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+</div> *@
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Create Post</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+          <form id="contentMetaForm" action="@Url.Action("Create", "Contents")" method="POST">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!-- Title -->
+            <div class="form-floating mt-3 mb-3">
+                <input id="Title" name="Title" class="form-control" placeholder="Name/ Meta Title" />
+                <label asp-for="Title">Meta Title / Name</label>
+            </div>
+            <!-- Link -->
+            <div class="form-floating mt-3 mb-3">
+                <input id="Link" name="Link" class="form-control" placeholder="Link (Not Mandatory)"/>
+                <label asp-for="Link">Link (Not Mandatory)</label>
+            </div>
+            <!-- Image Link -->
+            <div class="form-floating mt-3 mb-3">
+                <input id="ImageLink" name="ImageLink" class="form-control" placeholder="Image Link (Not Mandatory)"/>
+                <label asp-for="ImageLink">Image Link (Not Mandatory)</label>
+            </div>
+            <!-- Slug -->
+            <div class="form-floating mt-3 mb-3">
+                <input id="Slug" name="Slug" class="form-control" placeholder="Slug (Not Mandatory)"/>
+                <label asp-for="Slug">Slug (Not Mandatory)</label>
+            </div>
+            <!-- PrimaryKeyword -->
+            <div class="form-floating mt-3 mb-3">
+                <input id="PrimaryKeyword" name="PrimaryKeyword" class="form-control" placeholder="Primary Keyword" />
+                <label asp-for="PrimaryKeyword">Primary Keyword / Meta Keywords</label>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Short Description -->
+                    <div class="form-floating mt-3 mb-3">
+                        <textarea id="SecondaryKeywords" name="SecondaryKeywords" class="form-control" placeholder="Secondary Keywords (Not Mandatory but Important)" style="height:100px"></textarea>
+                        <label asp-for="SecondaryKeywords">Secondary Keywords (Not Mandatory but Important)</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Short Description -->
+                    <div class="form-floating mt-3 mb-3">
+                        <textarea id="TertiaryKeywords" name="TertiaryKeywords" class="form-control" placeholder="Tertiary Keywords (Not Mandatory but Important)" style="height:100px"></textarea>
+                        <label asp-for="TertiaryKeywords">Tertiary Keywords (Not Mandatory but Important)</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Short Name -->
+            <div class="form-floating mt-3 mb-3">
+                <input id="ShortName" name="ShortName" class="form-control" placeholder="Short Name"/>
+                <label asp-for="ShortName">Short Name</label>
+            </div>
+            <!-- Hook -->
+            <div class="form-floating mt-3 mb-3">
+                <input id="Hook" name="Hook" class="form-control" placeholder="Hook (Not Mandatory)"/>
+                <label asp-for="Hook">Hook (Not Mandatory)</label>
+            </div>
+                <!-- Hook Slug-->
+                <div class="form-floating mt-3 mb-3">
+                    <input id="HookSlug" name="HookSlug" value="@ViewBag.HookSlug" class="form-control" placeholder="Hook Slug (Not Mandatory)" />
+                    <label asp-for="HookSlug">Hook Slug (Not Mandatory)</label>
+                </div>
+            <hr />
+            <h5>SEO Meta Tags</h5>
+            <!-- Meta Description -->
+            <div class="form-floating mt-3 mb-3">
+                <textarea class="form-control" id="Description" name="Description" placeholder="Meta Description" style="height:100px"></textarea>
+                <label>Meta Description</label>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Meta Author -->
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="Author" name="Author" placeholder="Author">
+                        <label>Meta Author</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Robots -->
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="Robots" name="Robots" value="index, follow">
+                        <label>Robots</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Language -->
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="Language" name="Language" value="English">
+                        <label>Language</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Revisit -->
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="Revisit" name="Revisit" value="7 days">
+                        <label>Revisit After</label>
+                    </div>
+                </div>
+            </div>
+            @{
+            var newGuid = Guid.NewGuid();
+            var newGuidTrimmed = newGuid.ToString().Replace("-", "").ToLower();
+            }
+            <input type="hidden" name="Guid" value="@newGuid" />
+            <input type="hidden" name="Identity" value="@newGuidTrimmed" />
+            <input type="hidden" name="WebsiteId" value="@ViewBag.WebsiteId" />
+            <input type="hidden" name="Status" value="1" />
+            <input type="hidden" name="Tenant" value="1" />
+            <input type="hidden" name="CreatedBy" value="1" />
+            <input type="hidden" name="CreationDate" value="@DateTime.Now" />
+            <input type="hidden" name="ModifiedBy" value="1" />
+            <input type="hidden" name="ModifiedDate" value="@DateTime.Now" />
+            <input type="hidden" name="CompanyId" value="@Context.Session.GetInt32("CompanyId")" />
+            <input type="hidden" name="UserId" value="@Context.Session.GetInt32("UserId")" />
+            <br/>
+            <div class="mt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        <style>
+            .error {
+                border: 1px solid red;
+            }
+        </style>
+        <script>
+            document.getElementById("contentMetaForm").addEventListener("submit", function (e) {
+                let isValid = true;
+                let errors = [];
+
+                function validateRequired(fieldId, fieldName) {
+                    const el = document.getElementById(fieldId);
+                    if (!el || !el.value.trim()) {
+                        isValid = false;
+                        errors.push(fieldName + " is required");
+                        if (el) el.classList.add("error");
+                    } else {
+                        el.classList.remove("error");
+                    }
+                }
+
+                function validateNumber(fieldId, fieldName) {
+                    const el = document.getElementById(fieldId);
+                    if (!el || isNaN(el.value) || el.value === "") {
+                        isValid = false;
+                        errors.push(fieldName + " must be a valid number");
+                        if (el) el.classList.add("error");
+                    } else {
+                        el.classList.remove("error");
+                    }
+                }
+
+                function validateUrl(fieldId, fieldName) {
+                    const el = document.getElementById(fieldId);
+                    if (el && el.value.trim() !== "") {
+                        try {
+                            new URL(el.value);
+                            el.classList.remove("error");
+                        } catch {
+                            isValid = false;
+                            errors.push(fieldName + " must be a valid URL");
+                            el.classList.add("error");
+                        }
+                    }
+                }
+
+                // Required fields
+                // validateRequired("ContentId", "ContentId");
+                validateRequired("Title", "Title");
+                // validateRequired("PrimaryKeyword", "PrimaryKeyword");
+                validateRequired("ShortName", "ShortName");
+                // validateRequired("Description", "Description");
+                validateRequired("Author", "Author");
+                validateRequired("Robots", "Robots");
+                validateRequired("Language", "Language");
+                validateRequired("Revisit", "Revisit");
+
+                // Numeric validation
+                // validateNumber("ContentId", "ContentId");
+
+                // Optional URL validation
+                // validateUrl("Link", "Link");
+                // validateUrl("ImageLink", "ImageLink");
+                // validateRequired("Slug", "Slug");
+
+                // Final check
+                if (!isValid) {
+                    e.preventDefault();
+
+                    // Show error messages (you can customize UI)
+                    alert(errors.join("\n"));
+                }
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const nameInput = document.getElementById("Title");
+                const slugInput = document.getElementById("Slug");
+
+                function generateSlug(text) {
+                    return text
+                        .toLowerCase()
+                        .trim()
+                        .replace(/[\s\W-]+/g, "-")   // replace spaces & special chars with -
+                        .replace(/^-+|-+$/g, "");    // remove leading/trailing -
+                }
+
+                function updateSlug() {
+                    if (!slugInput.dataset.manualEdit) { // don't override if user edited slug manually
+                        slugInput.value = generateSlug(nameInput.value);
+                    }
+                }
+
+                // Trigger on typing
+                nameInput.addEventListener("input", updateSlug);
+
+                // Trigger on paste
+                nameInput.addEventListener("paste", function () {
+                    setTimeout(updateSlug, 0);
+                });
+
+                // Detect manual slug edit
+                slugInput.addEventListener("input", function () {
+                    if (slugInput.value.trim() !== "") {
+                        slugInput.dataset.manualEdit = "true";
+                    } else {
+                        delete slugInput.dataset.manualEdit;
+                    }
+                });
+
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+
+                const nameInput = document.getElementById("Title");
+                const slugInput = document.getElementById("Slug");
+                const keywordInput = document.getElementById("PrimaryKeyword");
+                const shortTitleInput = document.getElementById("ShortName");
+
+                // 🔹 SLUG GENERATOR
+                function generateSlug(text) {
+                    return text
+                        .toLowerCase()
+                        .trim()
+                        .replace(/[\s\W-]+/g, "-")
+                        .replace(/^-+|-+$/g, "");
+                }
+
+                function updateSlug() {
+                    if (!slugInput.dataset.manualEdit) {
+                        slugInput.value = generateSlug(nameInput.value);
+                    }
+                }
+
+                // 🔹 SHORT TITLE GENERATOR
+                function generateShortTitle(name, keyword) {
+                    if (!name || !keyword) return "";
+
+                    // Take first half of words from Name
+                    let words = name.trim().split(/\s+/);
+                    let halfLength = Math.ceil(words.length / 2);
+                    let halfName = words.slice(0, halfLength).join(" ");
+
+                    // Choose separator (you can randomize if you want)
+                    let separator = " | ";
+
+                    return `${halfName}${separator}${keyword}`;
+                }
+
+                function updateShortTitle() {
+                    if (!shortTitleInput.dataset.manualEdit) {
+                        shortTitleInput.value = generateShortTitle(
+                            nameInput.value,
+                            keywordInput.value
+                        );
+                    }
+                }
+
+                // 🔹 EVENTS
+
+                // Name input
+                nameInput.addEventListener("input", () => {
+                    updateSlug();
+                    updateShortTitle();
+                });
+
+                nameInput.addEventListener("paste", () => {
+                    setTimeout(() => {
+                        updateSlug();
+                        updateShortTitle();
+                    }, 0);
+                });
+
+                // Keyword input
+                keywordInput.addEventListener("input", updateShortTitle);
+                keywordInput.addEventListener("paste", () => {
+                    setTimeout(updateShortTitle, 0);
+                });
+
+                // Detect manual edits
+                slugInput.addEventListener("input", () => {
+                    slugInput.dataset.manualEdit = slugInput.value ? "true" : "";
+                });
+
+                shortTitleInput.addEventListener("input", () => {
+                    shortTitleInput.dataset.manualEdit = shortTitleInput.value ? "true" : "";
+                });
+            });
+        </script>
+        @* <form action="@Url.Action("Create", "Contents")" method="POST">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input name="Name" class="form-control" placeholder="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alias" class="control-label"></label>
+                <input name="Alias" class="form-control" placeholder="Primary Keyword" />
+                <span asp-validation-for="Alias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortName" class="control-label"></label>
+                <input name="ShortName" class="form-control" placeholder="Short Name"/>
+                <span asp-validation-for="ShortName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Link" class="control-label"></label>
+                <textarea name="Link" class="form-control" placeholder="Link"></textarea>
+                <span asp-validation-for="Link" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortDescription" class="control-label"></label>
+                <textarea name="ShortDescription" class="form-control" placeholder="Secondary Keywords or Synonyms"></textarea>
+                <span asp-validation-for="ShortDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hook" class="control-label"></label>
+                <textarea name="Hook" class="form-control" placeholder="Hook (Optional)"></textarea>
+                <span asp-validation-for="Hook" class="text-danger"></span>
+            </div>
+            @{
+                var newGuid = Guid.NewGuid();
+                var newGuidTrimmed = newGuid.ToString().Replace("-", "").ToLower();
+            }
+            <input type="hidden" name="Guid" class="form-control" value="@newGuid" />
+            <input type="hidden" name="Identity" class="form-control" value="@newGuidTrimmed" />
+            <input type="hidden" name="WebsiteId" class="form-control" value="@ViewBag.WebsiteId" />
+            <input type="hidden" name="Status" class="form-control" value="1" />
+            <input type="hidden" name="Tenant" class="form-control" value="1" />
+            <input type="hidden" name="CreatedBy" class="form-control" value="1" />
+            <input type="hidden" name="CreationDate" class="form-control" value="@DateTime.Now" />
+            <input type="hidden" name="ModifiedBy" class="form-control" value="1" />
+            <input type="hidden" name="ModifiedDate" class="form-control" value="@DateTime.Now" />
+            <input type="hidden" name="CompanyId" class="form-control" value="@Context.Session.GetInt32("CompanyId")" />
+            <input type="hidden" name="UserId" class="form-control" value="@Context.Session.GetInt32("UserId")" />
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form> *@
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.css" />
+<script src="https://cdn.datatables.net/2.3.5/js/dataTables.js"></script>
+<script>
+$(document).ready( function () {
+    $('#dtable').DataTable();
+})
+</script>
+
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" style="width:100%;" />
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function showImageModal(imageUrl) {
+        document.getElementById("modalImage").src = imageUrl;
+
+        var modal = new bootstrap.Modal(document.getElementById('imageModal'));
+        modal.show();
+    }
+</script>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Models.Base\DMMS.Models.Base.csproj" />
+    <ProjectReference Include="..\Core.Models.Common\DMMS.Models.Common.csproj" />
+    <ProjectReference Include="..\Core.Models.DTOs\DMMS.Models.DTOs.csproj" />
+    <ProjectReference Include="..\Core.Models.ViewModels\DMMS.Models.ViewModels.csproj" />
+    <ProjectReference Include="..\Core.Models\DMMS.Models.csproj" />
+  </ItemGroup>
+
+</Project>

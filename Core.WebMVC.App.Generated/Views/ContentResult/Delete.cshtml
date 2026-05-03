@@ -1,0 +1,12 @@
+@model DMMS.Models.ContentResult
+@inject IHttpContextAccessor HttpContextAccessor
+<h2>Delete</h2>
+<p>Are you sure you want to delete this?</p>
+<dl class="row">
+    <dt>ContentId</dt><dd> @Model.ContentId</dd>    <dt>Value</dt><dd> @Model.Value</dd>    <dt>CompanyId</dt><dd> @Model.CompanyId</dd>    <dt>UserId</dt><dd> @Model.UserId</dd>    <dt>Id</dt><dd> @Model.Id</dd>    <dt>Guid</dt><dd> @Model.Guid</dd>    <dt>Identity</dt><dd> @Model.Identity</dd>    <dt>Status</dt><dd> @Model.Status</dd>    <dt>Tenant</dt><dd> @Model.Tenant</dd>    <dt>CreatedBy</dt><dd> @Model.CreatedBy</dd>    <dt>CreationDate</dt><dd> @Model.CreationDate</dd>    <dt>ModifiedBy</dt><dd> @Model.ModifiedBy</dd>    <dt>ModifiedDate</dt><dd> @Model.ModifiedDate</dd>
+</dl>
+<form action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <ahref="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+</form>

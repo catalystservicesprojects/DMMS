@@ -1,0 +1,501 @@
+﻿<style>
+    /* ---------------- GLOBAL SAFETY ---------------- */
+    html, body {
+        max-width: 100%;
+        overflow-x: clip;
+        font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+        background: #f4f6f8;
+        color: #333;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* ---------------- MAIN CONTAINER ---------------- */
+
+    #blog-container-1 {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    /* ---------------- WORDPRESS COLUMN LAYOUT ---------------- */
+
+    .wp-block-columns {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 25px;
+        width: 100%;
+    }
+
+    @media (max-width:900px) {
+        .wp-block-columns {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* ---------------- SLIDER ---------------- */
+
+    .slider-container {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        max-width: 100%;
+        aspect-ratio: 10/14;
+        overflow: hidden;
+        border-radius: 14px;
+        background: white;
+        box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+    }
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        opacity: 0;
+        transition: opacity .8s ease;
+    }
+
+        .slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: max-content;
+            object-fit: contain;
+            background: linear-gradient(180deg,#f6f7f9,#e9edf3);
+        }
+
+    /*.slide img {
+            width: fit-content;
+            height: 100%;*/
+    /*object-fit: cover;*/
+    /*}*/
+
+    /* ---------------- SLIDER BUTTONS ---------------- */
+
+    .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.45);
+        border: none;
+        color: #fff;
+        font-size: 26px;
+        opacity: 1;
+        padding: 4px 17px;
+        border-radius: 50%;
+        cursor: pointer;
+        backdrop-filter: blur(6px);
+        transition: .25s;
+    }
+
+        .nav-btn:hover {
+            background: rgba(0,0,0,0.75);
+        }
+
+    .prev {
+        left: 15px;
+    }
+
+    .next {
+        right: 15px;
+    }
+
+    /* ---------------- THUMBNAILS ---------------- */
+
+    .thumbnail-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+        .thumbnail-container img {
+            width: 70px;
+            height: 85px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            opacity: .85;
+            transition: .25s;
+        }
+
+            .thumbnail-container img:hover {
+                transform: scale(1.08);
+                opacity: 1;
+            }
+
+            .thumbnail-container img.active-thumb {
+                border-color: #0073e6;
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+    /* ---------------- AFFILIATE BUTTONS ---------------- */
+
+    .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .affiliate-btn {
+        flex: 1 1 calc(50% - 12px);
+        background: linear-gradient(135deg,#6c757d,#2d3338);
+        color: #fff;
+        padding: 14px 20px;
+        border-radius: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+        transition: .25s;
+    }
+
+        .affiliate-btn:hover {
+            transform: translateY(-4px);
+            background: #0056b3;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+        }
+
+    @media (max-width:600px) {
+        .affiliate-btn {
+            flex: 1 1 100%;
+        }
+    }
+
+    /* ---------------- BLOG SECTION ---------------- */
+
+    .blog-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 30px;
+        background: #fff;
+        border-radius: 14px;
+        padding: 25px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+        .blog-section article {
+            margin-bottom: 18px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+    /* ---------------- ARTICLE & PRODUCT GRID ---------------- */
+    .article-section {
+        grid-column: 1 / span 2;
+    }
+
+    .product-section {
+        grid-column: 1 / span 2;
+    }
+
+    div.gallery {
+        border: 1px solid #ccc;
+    }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive grid */
+    .responsive {
+        padding: 10px;
+        float: left;
+        width: 25%;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .responsive {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+
+    /* ---------------- CARD STYLE ---------------- */
+    .gallery {
+        border-radius: 12px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .gallery:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.22);
+        }
+
+        /* Image Area */
+        .gallery img {
+            width: 100%;
+            padding: 5px;
+            height: fit-content !important; /* Consistent height */
+            object-fit: fill; /* Crop to fit perfectly */
+            display: block;
+        }
+
+    /* Title Text */
+    .desc {
+        padding: 12px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+        /* Trim text */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* ---------------- CLEARFIX SAFETY ---------------- */
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        /*clear: both;*/
+    }
+</style>
+<div id="blog-container-1" class="entry-content bloghash-entry" itemprop="text">
+    <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+            <!-- Slideshow Section -->
+            <section class="slideshow-section">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img id="img_1" src="OImage1" alt="OPrimaryKeyword">
+                    </div>
+                    <div class="slide">
+                        <img id="img_2" src="OImage2" alt="OPrimaryKeyword">
+                    </div>
+                    <div class="slide">
+                        <img id="img_3" src="OImage3" alt="OPrimaryKeyword">
+                    </div>
+                    <div class="slide">
+                        <img id="img_4" src="OImage4" alt="OPrimaryKeyword">
+                    </div>
+                    <div class="slide">
+                        <img id="img_5" src="OImage5" alt="OSecondaryKeyword">
+                    </div>
+                    <!--<div class="slide">
+                        <img id="img_6" src="OImage6" alt="OSecondaryKeyword">
+                    </div>
+                    <div class="slide">
+                        <img id="img_7" src="OImage7" alt="OSecondaryKeyword">
+                    </div>-->
+
+                    <button class="nav-btn prev">&#10094;</button>
+                    <button class="nav-btn next">&#10095;</button>
+                </div>
+
+                <!-- Thumbnail Strip -->
+                <div class="thumbnail-container">
+                    <img id="imgThumb_1" src="OImage1" alt="OPrimaryKeyword" class="active-thumb">
+                    <img id="imgThumb_2" src="OImage2" alt="OPrimaryKeyword">
+                    <img id="imgThumb_3" src="OImage3" alt="OPrimaryKeyword">
+                    <img id="imgThumb_4" src="OImage4" alt="OSecondaryKeyword">
+                    <img id="imgThumb_5" src="OImage5" alt="OSecondaryKeyword">
+                    <!--<img id="imgThumb_6" src="OImage6" alt="OSecondaryKeyword">
+                    <img id="imgThumb_7" src="OImage7" alt="OSecondaryKeyword">-->
+                </div>
+            </section>
+        </div>
+        <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+            <div id="affiliate-buttons" class="button-row">OBuyButtons</div>
+            ORightPanel
+        </div>
+    </div>
+</div>
+<!-- Blog Section -->
+<section class="blog-section">
+    OFullDescription
+</section>
+<div class="article-section" style="width: 100% !important">
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="OArticleLink1">
+                <img src="OArticleImageLink1" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">OArticleTitle1</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="OArticleLink2">
+                <img src="OArticleImageLink2" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">OArticleTitle2</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="OArticleLink3">
+                <img src="OArticleImageLink3" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">OArticleTitle3</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="OArticleLink4">
+                <img src="OArticleImageLink4" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">OArticleTitle4</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+<!-- Product Section -->
+<section class="product-section" style="width: 100% !important">
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="OProductLink1">
+                <img src="OProductImageLink1" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">OProductTitle1</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="OProductLink2">
+                <img src="OProductImageLink2" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">OProductTitle2</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="OProductLink3">
+                <img src="OProductImageLink3" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">OProductTitle3</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="OProductLink4">
+                <img src="OProductImageLink4" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">OProductTitle4</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</section>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const thumbs = document.querySelectorAll('.thumbnail-container img');
+    let currentIndex = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+        thumbs.forEach((thumb, i) => thumb.classList.toggle('active-thumb', i === index));
+        currentIndex = index;
+    }
+
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+    }
+
+    function prevSlide() {
+        const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+    }
+
+    function startAutoSlide() {
+        slideInterval = setInterval(nextSlide, 4000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(slideInterval);
+    }
+
+    document.querySelector('.next').addEventListener('click', () => {
+        nextSlide();
+        stopAutoSlide();
+        startAutoSlide();
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        prevSlide();
+        stopAutoSlide();
+        startAutoSlide();
+    });
+
+    thumbs.forEach((thumb, i) => {
+        thumb.addEventListener('click', () => {
+            showSlide(i);
+            stopAutoSlide();
+            startAutoSlide();
+        });
+    });
+
+    startAutoSlide();
+</script>

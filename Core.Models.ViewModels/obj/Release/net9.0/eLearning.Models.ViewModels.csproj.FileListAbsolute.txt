@@ -1,0 +1,16 @@
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\bin\Release\net9.0\eLearning.Models.ViewModels.deps.json
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\bin\Release\net9.0\eLearning.Models.ViewModels.dll
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\bin\Release\net9.0\eLearning.Models.ViewModels.pdb
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\bin\Release\net9.0\eLearning.Models.dll
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\bin\Release\net9.0\eLearning.Models.pdb
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearning.Models.ViewModels.csproj.AssemblyReference.cache
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearning.Models.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearning.Models.ViewModels.AssemblyInfoInputs.cache
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearning.Models.ViewModels.AssemblyInfo.cs
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearning.Models.ViewModels.csproj.CoreCompileInputs.cache
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearning.Models.ViewModels.sourcelink.json
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearnin.F832C116.Up2Date
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearning.Models.ViewModels.dll
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\refint\eLearning.Models.ViewModels.dll
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\eLearning.Models.ViewModels.pdb
+D:\NinadGawankar\Projects\eLearning\eLearning.Learnix\Core.Models.ViewModels\obj\Release\net9.0\ref\eLearning.Models.ViewModels.dll

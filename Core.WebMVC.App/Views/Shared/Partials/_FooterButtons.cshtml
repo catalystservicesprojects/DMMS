@@ -1,0 +1,46 @@
+﻿@*
+For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<nav id="PostingBar" class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+        </ul>
+        <form class="d-flex">
+            <input id="fcPublishType" class="form-check-input fcPublishType" type="checkbox" value="" checked>
+            <label class="form-check-label fcPublishTypeLabel" for="fcPublishType">
+                &nbsp;Publish Immediately
+            </label>
+            &nbsp;&nbsp;
+            <select class="form-select float-end" aria-label="Default select example">
+                <option>Select</option>
+                <option>Public</option>
+                <option>Private</option>
+                <option>Password Protected</option>
+            </select>
+            &nbsp;&nbsp;
+            <input type="date" class="form-control float-end" placeholder="Date to be published"/>
+            &nbsp;&nbsp;
+            <input type="time" class="form-control float-end" placeholder="Time to be published"/>
+            &nbsp;&nbsp;
+            <select class="form-select float-end" aria-label="Default select example">
+                <option>Select</option>
+                <option>Default</option>
+                <option>Elementor Canvas</option>
+                <option>Elementor Full Width</option>
+                <option>Theme</option>
+                <option>Block</option>
+                <option>Custome</option>
+            </select>
+            &nbsp;&nbsp;
+            <button type="button" id="btnPost" class="btn btn-primary float-end">Publish</button>
+        </form>
+    </div>
+  </div>
+</nav>

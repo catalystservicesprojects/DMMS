@@ -1,0 +1,65 @@
+﻿@model DMMS.Models.Content
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Content</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="@Url.Action("Create", "Contents")" method="POST">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input name="Name" class="form-control" placeholder="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alias" class="control-label"></label>
+                <input name="Alias" class="form-control" placeholder="Primary Keyword" />
+                <span asp-validation-for="Alias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortName" class="control-label"></label>
+                <input name="ShortName" class="form-control" placeholder="Short Name" />
+                <span asp-validation-for="ShortName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortDescription" class="control-label"></label>
+                <textarea name="ShortDescription" class="form-control" placeholder="Secondary Keywords or Synonyms"></textarea>
+                <span asp-validation-for="ShortDescription" class="text-danger"></span>
+            </div>
+            @{
+                var newGuid = Guid.NewGuid();
+                var newGuidTrimmed = newGuid.ToString().Replace("-", "").ToLower();
+            }
+            <input type="hidden" name="Guid" class="form-control" value="@newGuid" />
+            <input type="hidden" name="Identity" class="form-control" value="@newGuidTrimmed" />
+            <input type="hidden" name="WebsiteId" class="form-control" value="@ViewBag.WebsiteId" />
+            <input type="hidden" name="Status" class="form-control" value="1" />
+            <input type="hidden" name="Tenant" class="form-control" value="1" />
+            <input type="hidden" name="CreatedBy" class="form-control" value="1" />
+            <input type="hidden" name="CreationDate" class="form-control" value="@DateTime.Now" />
+            <input type="hidden" name="ModifiedBy" class="form-control" value="1" />
+            <input type="hidden" name="ModifiedDate" class="form-control" value="@DateTime.Now" />
+            <input type="hidden" name="CompanyId" class="form-control" value="@Context.Session.GetInt32("CompanyId")" />
+            <input type="hidden" name="UserId" class="form-control" value="@Context.Session.GetInt32("UserId")" />
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,29 @@
+@model DMMS.Models.ContentSocial
+@inject IHttpContextAccessor HttpContextAccessor
+<h2>Edit ContentSocial</h2>
+<form action="Edit" method="post">
+    <div class="form-group"><label asp-for="ContentId"></label><input name="ContentId" id="ContentId" class="form-control" placeholder="ContentId"/><span asp-validation-for="ContentId" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="Value"></label><input name="Value" id="Value" class="form-control" placeholder="Value"/><span asp-validation-for="Value" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="CompanyId"></label><input name="CompanyId" id="CompanyId" class="form-control" placeholder="CompanyId"/><span asp-validation-for="CompanyId" class="text-danger"></span></div> 
+    <input value="@HttpContextAccessor.HttpContext.Session.GetString("UserId")" type="hidden" name="UserId" id="UserId"  placeholder="UserId"/>
+    <input value="1" type="hidden" name="Id" id="Id"  placeholder="Id"/>
+            @{
+            var newGuid = Guid.NewGuid();
+            var newGuidTrimmed = newGuid.ToString().Replace("-", "").ToLower();
+        }
+    <input value="@newGuid" type="hidden" name="Guid" id="Guid"  placeholder="Guid"/>
+    <input value="@newGuidTrimmed" type="hidden" name="Guid" id="Guid"  placeholder="Guid"/>
+    <div class="form-group"><label asp-for="Identity"></label><input name="Identity" id="Identity" class="form-control" placeholder="Identity"/><span asp-validation-for="Identity" class="text-danger"></span></div> 
+    <input value="1" type="hidden" name="Status" id="Status"  placeholder="Status"/>
+    <input value="0" type="hidden" name="Tenant" id="Tenant"  placeholder="Tenant"/>
+    <input value="1" type="hidden" name="CreatedBy" id="CreatedBy"  placeholder="CreatedBy"/>
+    <input value="@DateTime.Now" type="hidden" name="CreationDate" id="CreationDate"  placeholder="CreationDate"/>
+    <input value="1" type="hidden" name="ModifiedBy" id="ModifiedBy"  placeholder="ModifiedBy"/>
+    <input value="@DateTime.Now" type="hidden" name="ModifiedDate" id="ModifiedDate"  placeholder="ModifiedDate"/>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Back</a>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

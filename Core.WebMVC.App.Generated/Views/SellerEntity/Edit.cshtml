@@ -1,0 +1,35 @@
+@model DMMS.Models.SellerEntity
+@inject IHttpContextAccessor HttpContextAccessor
+<h2>Edit SellerEntity</h2>
+<form action="Edit" method="post">
+    <div class="form-group"><label asp-for="BackgroundColor"></label><input name="BackgroundColor" id="BackgroundColor" class="form-control" placeholder="BackgroundColor"/><span asp-validation-for="BackgroundColor" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="TextColor"></label><input name="TextColor" id="TextColor" class="form-control" placeholder="TextColor"/><span asp-validation-for="TextColor" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="BorderColor"></label><input name="BorderColor" id="BorderColor" class="form-control" placeholder="BorderColor"/><span asp-validation-for="BorderColor" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="Style"></label><input name="Style" id="Style" class="form-control" placeholder="Style"/><span asp-validation-for="Style" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="Class"></label><input name="Class" id="Class" class="form-control" placeholder="Class"/><span asp-validation-for="Class" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="OpenIn"></label><input name="OpenIn" id="OpenIn" class="form-control" placeholder="OpenIn"/><span asp-validation-for="OpenIn" class="text-danger"></span></div> 
+    <input value="1" type="hidden" name="Id" id="Id"  placeholder="Id"/>
+    <div class="form-group"><label asp-for="Name"></label><input name="Name" id="Name" class="form-control" placeholder="Name"/><span asp-validation-for="Name" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="Alias"></label><input name="Alias" id="Alias" class="form-control" placeholder="Alias"/><span asp-validation-for="Alias" class="text-danger"></span></div> 
+    <div class="form-group"><label asp-for="CompanyId"></label><input name="CompanyId" id="CompanyId" class="form-control" placeholder="CompanyId"/><span asp-validation-for="CompanyId" class="text-danger"></span></div> 
+    <input value="@HttpContextAccessor.HttpContext.Session.GetString("UserId")" type="hidden" name="UserId" id="UserId"  placeholder="UserId"/>
+            @{
+            var newGuid = Guid.NewGuid();
+            var newGuidTrimmed = newGuid.ToString().Replace("-", "").ToLower();
+        }
+    <input value="@newGuid" type="hidden" name="Guid" id="Guid"  placeholder="Guid"/>
+    <input value="@newGuidTrimmed" type="hidden" name="Guid" id="Guid"  placeholder="Guid"/>
+    <div class="form-group"><label asp-for="Identity"></label><input name="Identity" id="Identity" class="form-control" placeholder="Identity"/><span asp-validation-for="Identity" class="text-danger"></span></div> 
+    <input value="1" type="hidden" name="Status" id="Status"  placeholder="Status"/>
+    <input value="0" type="hidden" name="Tenant" id="Tenant"  placeholder="Tenant"/>
+    <input value="1" type="hidden" name="CreatedBy" id="CreatedBy"  placeholder="CreatedBy"/>
+    <input value="@DateTime.Now" type="hidden" name="CreationDate" id="CreationDate"  placeholder="CreationDate"/>
+    <input value="1" type="hidden" name="ModifiedBy" id="ModifiedBy"  placeholder="ModifiedBy"/>
+    <input value="@DateTime.Now" type="hidden" name="ModifiedDate" id="ModifiedDate"  placeholder="ModifiedDate"/>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Back</a>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

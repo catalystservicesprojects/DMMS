@@ -1,0 +1,140 @@
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.bundle.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery-3.7.1.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap.min.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery-3.7.1.intellisense.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-grid.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-grid.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-grid.min.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery.validate.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-utilities.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-grid.rtl.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\htm\product-v5.html
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-utilities.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap.min.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-reboot.rtl.min.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\modernizr-2.8.3.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-grid.rtl.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-utilities.rtl.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-grid.min.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\dataTables.fixedHeader.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.bundle.js.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.esm.min.js.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-reboot.rtl.min.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.esm.js.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery-3.7.1.slim.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.min.js.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-utilities.rtl.min.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-utilities.rtl.min.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery.validate-vsdoc.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-utilities.rtl.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery-3.7.1.min.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-utilities.min.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-reboot.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery.dataTables.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\dataTables.responsive.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap.rtl.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery-3.7.1.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-utilities.min.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-reboot.rtl.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.esm.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-reboot.min.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.bundle.min.js.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\favicon.ico
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\test.txt
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\dataTables.bootstrap.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery.validate.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\Site.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery-3.7.1.slim.min.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap.rtl.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery-3.7.1.slim.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-grid.rtl.min.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap.rtl.min.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.bundle.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery.validate.unobtrusive.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery.validate.unobtrusive.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap.rtl.min.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.js.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-grid.rtl.min.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\jquery-3.4.1.intellisense.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\htm\product-v6.html
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-reboot.rtl.css
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\js\bootstrap.esm.min.js
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\htm\product.html
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-reboot.min.css.map
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.WebMVC.App\wwwroot\css\bootstrap-reboot.css
+wwwroot\css\bootstrap.css
+wwwroot\css\bootstrap.css.map
+wwwroot\css\bootstrap.min.css
+wwwroot\css\bootstrap.min.css.map
+wwwroot\css\bootstrap.rtl.css
+wwwroot\css\bootstrap.rtl.css.map
+wwwroot\css\bootstrap.rtl.min.css
+wwwroot\css\bootstrap.rtl.min.css.map
+wwwroot\css\bootstrap-grid.css
+wwwroot\css\bootstrap-grid.css.map
+wwwroot\css\bootstrap-grid.min.css
+wwwroot\css\bootstrap-grid.min.css.map
+wwwroot\css\bootstrap-grid.rtl.css
+wwwroot\css\bootstrap-grid.rtl.css.map
+wwwroot\css\bootstrap-grid.rtl.min.css
+wwwroot\css\bootstrap-grid.rtl.min.css.map
+wwwroot\css\bootstrap-reboot.css
+wwwroot\css\bootstrap-reboot.css.map
+wwwroot\css\bootstrap-reboot.min.css
+wwwroot\css\bootstrap-reboot.min.css.map
+wwwroot\css\bootstrap-reboot.rtl.css
+wwwroot\css\bootstrap-reboot.rtl.css.map
+wwwroot\css\bootstrap-reboot.rtl.min.css
+wwwroot\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\css\bootstrap-utilities.css
+wwwroot\css\bootstrap-utilities.css.map
+wwwroot\css\bootstrap-utilities.min.css
+wwwroot\css\bootstrap-utilities.min.css.map
+wwwroot\css\bootstrap-utilities.rtl.css
+wwwroot\css\bootstrap-utilities.rtl.css.map
+wwwroot\css\bootstrap-utilities.rtl.min.css
+wwwroot\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\css\Site.css
+wwwroot\favicon.ico
+wwwroot\favicon-16x16.png
+wwwroot\favicon-32x32.png
+wwwroot\htm\product.html
+wwwroot\htm\product-v5.html
+wwwroot\htm\product-v6.html
+wwwroot\js\bootstrap.bundle.js
+wwwroot\js\bootstrap.bundle.js.map
+wwwroot\js\bootstrap.bundle.min.js
+wwwroot\js\bootstrap.bundle.min.js.map
+wwwroot\js\bootstrap.esm.js
+wwwroot\js\bootstrap.esm.js.map
+wwwroot\js\bootstrap.esm.min.js
+wwwroot\js\bootstrap.esm.min.js.map
+wwwroot\js\bootstrap.js
+wwwroot\js\bootstrap.js.map
+wwwroot\js\bootstrap.min.js
+wwwroot\js\bootstrap.min.js.map
+wwwroot\js\dataTables.bootstrap.min.js
+wwwroot\js\dataTables.fixedHeader.min.js
+wwwroot\js\dataTables.responsive.min.js
+wwwroot\js\jquery.dataTables.min.js
+wwwroot\js\jquery.min.js
+wwwroot\js\jquery.validate.js
+wwwroot\js\jquery.validate.min.js
+wwwroot\js\jquery.validate.unobtrusive.js
+wwwroot\js\jquery.validate.unobtrusive.min.js
+wwwroot\js\jquery.validate-vsdoc.js
+wwwroot\js\jquery-3.4.1.intellisense.js
+wwwroot\js\jquery-3.7.1.intellisense.js
+wwwroot\js\jquery-3.7.1.js
+wwwroot\js\jquery-3.7.1.min.js
+wwwroot\js\jquery-3.7.1.min.map
+wwwroot\js\jquery-3.7.1.slim.js
+wwwroot\js\jquery-3.7.1.slim.min.js
+wwwroot\js\jquery-3.7.1.slim.min.map
+wwwroot\js\modernizr-2.8.3.js
+wwwroot\test.txt

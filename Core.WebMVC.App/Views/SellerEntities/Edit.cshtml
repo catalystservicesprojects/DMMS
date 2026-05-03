@@ -1,0 +1,110 @@
+﻿@model DMMS.Models.SellerEntity
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>SellerEntity</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BackgroundColor" class="control-label"></label>
+                <input asp-for="BackgroundColor" class="form-control" />
+                <span asp-validation-for="BackgroundColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TextColor" class="control-label"></label>
+                <input asp-for="TextColor" class="form-control" />
+                <span asp-validation-for="TextColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BorderColor" class="control-label"></label>
+                <input asp-for="BorderColor" class="form-control" />
+                <span asp-validation-for="BorderColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Style" class="control-label"></label>
+                <input asp-for="Style" class="form-control" />
+                <span asp-validation-for="Style" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Class" class="control-label"></label>
+                <input asp-for="Class" class="form-control" />
+                <span asp-validation-for="Class" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OpenIn" class="control-label"></label>
+                <input asp-for="OpenIn" class="form-control" />
+                <span asp-validation-for="OpenIn" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alias" class="control-label"></label>
+                <input asp-for="Alias" class="form-control" />
+                <span asp-validation-for="Alias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Guid" class="control-label"></label>
+                <input asp-for="Guid" class="form-control" />
+                <span asp-validation-for="Guid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Identity" class="control-label"></label>
+                <input asp-for="Identity" class="form-control" />
+                <span asp-validation-for="Identity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tenant" class="control-label"></label>
+                <input asp-for="Tenant" class="form-control" />
+                <span asp-validation-for="Tenant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedBy" class="control-label"></label>
+                <input asp-for="CreatedBy" class="form-control" />
+                <span asp-validation-for="CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreationDate" class="control-label"></label>
+                <input asp-for="CreationDate" class="form-control" />
+                <span asp-validation-for="CreationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModifiedBy" class="control-label"></label>
+                <input asp-for="ModifiedBy" class="form-control" />
+                <span asp-validation-for="ModifiedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModifiedDate" class="control-label"></label>
+                <input asp-for="ModifiedDate" class="form-control" />
+                <span asp-validation-for="ModifiedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

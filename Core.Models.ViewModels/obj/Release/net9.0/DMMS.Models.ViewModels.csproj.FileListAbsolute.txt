@@ -1,0 +1,40 @@
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.ViewModels.deps.json
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.ViewModels.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.ViewModels.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.Base.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.Common.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.Common.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.Base.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.csproj.AssemblyReference.cache
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.AssemblyInfoInputs.cache
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.AssemblyInfo.cs
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.csproj.CoreCompileInputs.cache
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.sourcelink.json
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Mod.EF704C46.Up2Date
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\refint\DMMS.Models.ViewModels.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.ViewModels\obj\Release\net9.0\ref\DMMS.Models.ViewModels.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.ViewModels.deps.json
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.ViewModels.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.ViewModels.pdb
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.Base.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.Common.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.Common.pdb
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.pdb
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\bin\Release\net9.0\DMMS.Models.Base.pdb
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.csproj.AssemblyReference.cache
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.AssemblyInfoInputs.cache
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.AssemblyInfo.cs
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.csproj.CoreCompileInputs.cache
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.sourcelink.json
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Mod.EF704C46.Up2Date
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\refint\DMMS.Models.ViewModels.dll
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\DMMS.Models.ViewModels.pdb
+D:\Gawankars\Ninad\Projects\DMMS 03022026 2340\Core.Models.ViewModels\obj\Release\net9.0\ref\DMMS.Models.ViewModels.dll

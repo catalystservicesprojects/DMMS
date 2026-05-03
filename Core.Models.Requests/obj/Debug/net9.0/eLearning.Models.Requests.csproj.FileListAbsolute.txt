@@ -1,0 +1,12 @@
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\bin\Debug\net9.0\eLearning.Models.Requests.deps.json
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\bin\Debug\net9.0\eLearning.Models.Requests.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\bin\Debug\net9.0\eLearning.Models.Requests.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\eLearning.Models.Requests.GeneratedMSBuildEditorConfig.editorconfig
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\eLearning.Models.Requests.AssemblyInfoInputs.cache
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\eLearning.Models.Requests.AssemblyInfo.cs
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\eLearning.Models.Requests.csproj.CoreCompileInputs.cache
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\eLearning.Models.Requests.sourcelink.json
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\eLearning.Models.Requests.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\refint\eLearning.Models.Requests.dll
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\eLearning.Models.Requests.pdb
+D:\NinadGawankar\Projects\DMMS\Core.Models.Requests\obj\Debug\net9.0\ref\eLearning.Models.Requests.dll

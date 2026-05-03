@@ -1,0 +1,62 @@
+﻿@model DMMS.WebMVC.App.Models.Website
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Website</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" placeholder="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Alias" class="control-label"></label>
+                <input asp-for="Alias" class="form-control" placeholder="Alias" />
+                <span asp-validation-for="Alias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Url" class="control-label"></label>
+                <input asp-for="Url" class="form-control" placeholder="Url" />
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Guid" class="control-label"></label>
+                <input asp-for="Guid" class="form-control" placeholder="Guid" />
+                <span asp-validation-for="Guid" class="text-danger"></span>
+            </div>
+        @{
+            var newGuid = Guid.NewGuid();
+            var newGuidTrimmed = newGuid.ToString().Replace("-", "").ToLower();
+        }
+        <input type="hidden" name="Guid" class="form-control" value="@newGuid" />
+        <input type="hidden" name="Identity" class="form-control" value="@newGuidTrimmed" />
+        <input type="hidden" name="Status" class="form-control" value="1" />
+        <input type="hidden" name="Tenant" class="form-control" value="1" />
+        <input type="hidden" name="CreatedBy" class="form-control" value="1" />
+        <input type="hidden" name="CreationDate" class="form-control" value="@DateTime.Now" />
+        <input type="hidden" name="ModifiedBy" class="form-control" value="1" />
+        <input type="hidden" name="ModifiedDate" class="form-control" value="@DateTime.Now" />
+        </br>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

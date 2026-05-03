@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.24" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.24">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.24">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.23" />
+    <PackageReference Include="MySql.Data" Version="9.5.0" />
+    <PackageReference Include="MySqlConnector" Version="2.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\themes\duralux\.github\workflows\release.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Models.Base\DMMS.Models.Base.csproj" />
+    <ProjectReference Include="..\Core.Models.Common\DMMS.Models.Common.csproj" />
+    <ProjectReference Include="..\Core.Models.DTOs\DMMS.Models.DTOs.csproj" />
+    <ProjectReference Include="..\Core.Models.Requests\DMMS.Models.Requests.csproj" />
+    <ProjectReference Include="..\Core.Models.ViewModels\DMMS.Models.ViewModels.csproj" />
+    <ProjectReference Include="..\Core.Models\DMMS.Models.csproj" />
+    <ProjectReference Include="..\DMMS.Models.Response\DMMS.Models.Response.csproj" />
+  </ItemGroup>
+
+</Project>

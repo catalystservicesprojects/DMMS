@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {}
+  },
+  "projects": {
+    "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj",
+        "projectName": "DMMS.Models.Base",
+        "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj",
+        "packagesPath": "C:\\Users\\Catalyst Tech\\.nuget\\packages\\",
+        "outputPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Catalyst Tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@model IEnumerable<DMMS.Models.Environment>
+@inject IHttpContextAccessor HttpContextAccessor
+<h2>Environment - Index</h2>
+<p><a href="@Url.Action("Create")" class="btn btn-primary">Create New</a></p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>CMSTypeId</th>            <th>Id</th>            <th>Name</th>            <th>Alias</th>            <th>CompanyId</th>            <th>UserId</th>            <th>Guid</th>            <th>Identity</th>            <th>Status</th>            <th>Tenant</th>            <th>CreatedBy</th>            <th>CreationDate</th>            <th>ModifiedBy</th>            <th>ModifiedDate</th>                    <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CMSTypeId</td>            <td>@item.Id</td>            <td>@item.Name</td>            <td>@item.Alias</td>            <td>@item.CompanyId</td>            <td>@item.UserId</td>            <td>@item.Guid</td>            <td>@item.Identity</td>            <td>@item.Status</td>            <td>@item.Tenant</td>            <td>@item.CreatedBy</td>            <td>@item.CreationDate</td>            <td>@item.ModifiedBy</td>            <td>@item.ModifiedDate</td>                    <td>
+                <a href="@Url.Action("Details")" asp-route-id="@item.Id">Details</a> |
+                <a href="@Url.Action("Edit")" asp-route-id="@item.Id">Edit</a> |
+                <a href="@Url.Action("Delete")" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
