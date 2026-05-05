@@ -62,23 +62,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Catalyst Tech\\.nuget\\packages\\": {},
+    "C:\\Users\\Catalyst Services\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj",
+      "projectUniqueName": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj",
       "projectName": "DMMS.Models",
-      "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj",
-      "packagesPath": "C:\\Users\\Catalyst Tech\\.nuget\\packages\\",
-      "outputPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models\\obj\\",
+      "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj",
+      "packagesPath": "C:\\Users\\Catalyst Services\\.nuget\\packages\\",
+      "outputPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Catalyst Tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Catalyst Services\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -92,16 +92,17 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {
-              "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj"
+            "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj": {
+              "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Base\\DMMS.Models.Base.csproj"
             },
-            "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
-              "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj"
+            "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
+              "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj"
             },
-            "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Utility\\DMMS.Utility.csproj": {
-              "projectPath": "D:\\Gawankars\\Ninad\\Companies\\CatalystTech\\Projects\\DMMS\\Core.Utility\\DMMS.Utility.csproj"
+            "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Utility\\DMMS.Utility.csproj": {
+              "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Utility\\DMMS.Utility.csproj"
             }
           }
         }
@@ -120,6 +121,7 @@
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "imports": [
           "net461",
@@ -137,7 +139,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

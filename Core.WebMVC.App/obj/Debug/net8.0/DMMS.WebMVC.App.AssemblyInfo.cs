@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DMMS.WebMVC.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4382ebf377d1b3503a5c6ccd97c19591a6ed773")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b88cfd76c3aaac94a7b4c5076c57c2f48310baf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DMMS.WebMVC.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DMMS.WebMVC.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

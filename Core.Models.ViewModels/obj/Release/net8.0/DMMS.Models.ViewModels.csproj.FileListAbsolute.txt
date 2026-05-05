@@ -40,3 +40,25 @@ D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.ViewModels\o
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\refint\DMMS.Models.ViewModels.dll
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.pdb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\ref\DMMS.Models.ViewModels.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.ViewModels.deps.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.ViewModels.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.ViewModels.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.Base.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.Common.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Utility.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.Common.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Models.Base.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\bin\Release\net8.0\DMMS.Utility.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.csproj.AssemblyReference.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.AssemblyInfoInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.AssemblyInfo.cs
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.csproj.CoreCompileInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.sourcelink.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Mod.EF704C46.Up2Date
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\refint\DMMS.Models.ViewModels.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\DMMS.Models.ViewModels.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.ViewModels\obj\Release\net8.0\ref\DMMS.Models.ViewModels.dll

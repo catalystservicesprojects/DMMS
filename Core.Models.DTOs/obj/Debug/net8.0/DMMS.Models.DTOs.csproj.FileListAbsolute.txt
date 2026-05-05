@@ -34,3 +34,15 @@ D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.DTOs\obj\Deb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\refint\DMMS.Models.DTOs.dll
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\DMMS.Models.DTOs.pdb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\ref\DMMS.Models.DTOs.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\bin\Debug\net8.0\DMMS.Models.DTOs.deps.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\bin\Debug\net8.0\DMMS.Models.DTOs.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\bin\Debug\net8.0\DMMS.Models.DTOs.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\DMMS.Models.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\DMMS.Models.DTOs.AssemblyInfoInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\DMMS.Models.DTOs.AssemblyInfo.cs
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\DMMS.Models.DTOs.csproj.CoreCompileInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\DMMS.Models.DTOs.sourcelink.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\DMMS.Models.DTOs.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\refint\DMMS.Models.DTOs.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\DMMS.Models.DTOs.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.DTOs\obj\Debug\net8.0\ref\DMMS.Models.DTOs.dll

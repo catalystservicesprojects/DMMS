@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DMMS.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cbde91fa17a7c882177eb8b2a799e6f65aa0a84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b88cfd76c3aaac94a7b4c5076c57c2f48310baf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DMMS.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DMMS.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

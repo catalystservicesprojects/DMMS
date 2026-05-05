@@ -34,3 +34,15 @@ D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Utility\obj\Debug\n
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Utility\obj\Debug\net8.0\refint\DMMS.Utility.dll
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Utility\obj\Debug\net8.0\DMMS.Utility.pdb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Utility\obj\Debug\net8.0\ref\DMMS.Utility.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\bin\Debug\net8.0\DMMS.Utility.deps.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\bin\Debug\net8.0\DMMS.Utility.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\bin\Debug\net8.0\DMMS.Utility.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\DMMS.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\DMMS.Utility.AssemblyInfoInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\DMMS.Utility.AssemblyInfo.cs
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\DMMS.Utility.csproj.CoreCompileInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\DMMS.Utility.sourcelink.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\DMMS.Utility.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\refint\DMMS.Utility.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\DMMS.Utility.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Utility\obj\Debug\net8.0\ref\DMMS.Utility.dll

@@ -36,3 +36,23 @@ D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models\obj\Release\
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models\obj\Release\net8.0\refint\DMMS.Models.dll
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.pdb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models\obj\Release\net8.0\ref\DMMS.Models.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Models.deps.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Models.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Models.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Models.Base.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Models.Common.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Utility.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Models.Base.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Models.Common.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\bin\Release\net8.0\DMMS.Utility.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.csproj.AssemblyReference.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.AssemblyInfoInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.AssemblyInfo.cs
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.csproj.CoreCompileInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.sourcelink.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Mod.FE0810E8.Up2Date
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\refint\DMMS.Models.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\DMMS.Models.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models\obj\Release\net8.0\ref\DMMS.Models.dll

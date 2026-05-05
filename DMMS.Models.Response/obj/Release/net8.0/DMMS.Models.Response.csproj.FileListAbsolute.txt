@@ -22,3 +22,15 @@ D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\DMMS.Models.Response\obj
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\refint\DMMS.Models.Response.dll
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\DMMS.Models.Response.pdb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\ref\DMMS.Models.Response.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\bin\Release\net8.0\DMMS.Models.Response.deps.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\bin\Release\net8.0\DMMS.Models.Response.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\bin\Release\net8.0\DMMS.Models.Response.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\DMMS.Models.Response.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\DMMS.Models.Response.AssemblyInfoInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\DMMS.Models.Response.AssemblyInfo.cs
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\DMMS.Models.Response.csproj.CoreCompileInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\DMMS.Models.Response.sourcelink.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\DMMS.Models.Response.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\refint\DMMS.Models.Response.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\DMMS.Models.Response.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\DMMS.Models.Response\obj\Release\net8.0\ref\DMMS.Models.Response.dll

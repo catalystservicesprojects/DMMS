@@ -22,3 +22,15 @@ D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.Requests\obj
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\refint\DMMS.Models.Requests.dll
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\DMMS.Models.Requests.pdb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\ref\DMMS.Models.Requests.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\bin\Release\net8.0\DMMS.Models.Requests.deps.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\bin\Release\net8.0\DMMS.Models.Requests.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\bin\Release\net8.0\DMMS.Models.Requests.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\DMMS.Models.Requests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\DMMS.Models.Requests.AssemblyInfoInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\DMMS.Models.Requests.AssemblyInfo.cs
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\DMMS.Models.Requests.csproj.CoreCompileInputs.cache
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\DMMS.Models.Requests.sourcelink.json
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\DMMS.Models.Requests.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\refint\DMMS.Models.Requests.dll
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\DMMS.Models.Requests.pdb
+D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Release\net8.0\ref\DMMS.Models.Requests.dll
