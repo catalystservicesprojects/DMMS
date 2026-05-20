@@ -1,12 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41370358-F92A-47D2-A60A-C5DC19C93CCF}|..\\Core.WebMVC.App\\DMMS.WebMVC.App.csproj|d:\\gawankars\\ninad\\companies\\catalyst services\\projects\\dmms\\core.webmvc.app\\views\\contents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.WebMVC.App\\Views\\Contents\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\Core.WebMVC.App\\Views\\Contents\\Index.cshtml",
+              "ToolTip": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.WebMVC.App\\Views\\Contents\\Index.cshtml",
+              "RelativeToolTip": "..\\Core.WebMVC.App\\Views\\Contents\\Index.cshtml",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAAAHwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-20T05:11:30.446Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

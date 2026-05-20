@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj",
+      "projectUniqueName": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj",
       "projectName": "DMMS.Models.DTOs",
-      "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj",
+      "projectPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.DTOs\\DMMS.Models.DTOs.csproj",
       "packagesPath": "C:\\Users\\Catalyst Services\\.nuget\\packages\\",
-      "outputPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.DTOs\\obj\\",
+      "outputPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.DTOs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

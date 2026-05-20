@@ -46,3 +46,15 @@ D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\
 D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\refint\DMMS.Models.Requests.dll
 D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\DMMS.Models.Requests.pdb
 D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\ref\DMMS.Models.Requests.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\bin\Debug\net8.0\DMMS.Models.Requests.deps.json
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\bin\Debug\net8.0\DMMS.Models.Requests.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\bin\Debug\net8.0\DMMS.Models.Requests.pdb
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\DMMS.Models.Requests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\DMMS.Models.Requests.AssemblyInfoInputs.cache
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\DMMS.Models.Requests.AssemblyInfo.cs
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\DMMS.Models.Requests.csproj.CoreCompileInputs.cache
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\DMMS.Models.Requests.sourcelink.json
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\DMMS.Models.Requests.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\refint\DMMS.Models.Requests.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\DMMS.Models.Requests.pdb
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Models.Requests\obj\Debug\net8.0\ref\DMMS.Models.Requests.dll

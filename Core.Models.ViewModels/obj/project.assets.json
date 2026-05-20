@@ -87,11 +87,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj",
+      "projectUniqueName": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj",
       "projectName": "DMMS.Models.ViewModels",
-      "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj",
+      "projectPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.ViewModels\\DMMS.Models.ViewModels.csproj",
       "packagesPath": "C:\\Users\\Catalyst Services\\.nuget\\packages\\",
-      "outputPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.ViewModels\\obj\\",
+      "outputPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -114,11 +114,11 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
-              "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj"
+            "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj": {
+              "projectPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Common\\DMMS.Models.Common.csproj"
             },
-            "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj": {
-              "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj"
+            "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj": {
+              "projectPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\DMMS.Models.csproj"
             }
           }
         }

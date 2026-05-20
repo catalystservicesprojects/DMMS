@@ -32,26 +32,26 @@ namespace DMMS.WebMVC.App.Controllers
 
                 //return View(await _context.Content.Where(x => x.Status == 1 && x.WebsiteId == website.Id).OrderByDescending(x => x.Id).ToListAsync());
 
-                var data = await _context.Content
+                var data = await _context.ContentMetas
                             .Where(x => x.Status == 1 && x.WebsiteId == website.Id)
                             .OrderByDescending(x => x.Id)
-                            .Select(content => new ContentListSEO
+                            .Select(contentMeta => new ContentListSEO
                             {
-                                Content = content,
+                                ContentMeta = contentMeta,
                                 ContentLinksMedia = _context.ContentLinksMedia
-                                            .Where(m => m.ContentId == content.Id)
+                                            .Where(m => m.ContentId == contentMeta.ContentId)
                                             .FirstOrDefault()
                             })
                             .ToListAsync();
                 return View(data);
             }
-            return View(await _context.Content
+            return View(await _context.ContentMetas
                             .OrderByDescending(x => x.Id)
-                            .Select(content => new ContentListSEO
+                            .Select(contentMeta => new ContentListSEO
                             {
-                                Content = content,
+                                ContentMeta = contentMeta,
                                 ContentLinksMedia = _context.ContentLinksMedia
-                                            .Where(m => m.ContentId == content.Id)
+                                            .Where(m => m.ContentId == contentMeta.ContentId)
                                             .FirstOrDefault()
                             })
                             .ToListAsync());

@@ -61,7 +61,8 @@ namespace DMMS.WebMVC.App.Controllers
             Content? previousSeoContent = _context.Content
                                         .Where(x => x.Id < contentId
                                             && x.WebsiteId == websiteId
-                                            && x.UserId == userId)
+                                            && x.UserId == userId
+                                            && x.Status == 1)
                                         .OrderByDescending(x => x.Id)
                                         .FirstOrDefault();
 

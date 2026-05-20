@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Requests\\DMMS.Models.Requests.csproj",
+      "projectUniqueName": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Requests\\DMMS.Models.Requests.csproj",
       "projectName": "DMMS.Models.Requests",
-      "projectPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Requests\\DMMS.Models.Requests.csproj",
+      "projectPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Requests\\DMMS.Models.Requests.csproj",
       "packagesPath": "C:\\Users\\Catalyst Services\\.nuget\\packages\\",
-      "outputPath": "D:\\Gawankars\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Requests\\obj\\",
+      "outputPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models.Requests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
