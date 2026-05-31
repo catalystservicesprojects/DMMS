@@ -41,6 +41,7 @@ wwwroot\htm\post_layout_blog_koilakishiv.html
 wwwroot\htm\post_layout_classic_others.html
 wwwroot\htm\post_layout_classic_uscpl - Copy.html
 wwwroot\htm\post_layout_classic_uscpl.html
+wwwroot\htm\post_layout_classic_uscpl_blog.html
 wwwroot\htm\post_layout_classic_wiseweb.html
 wwwroot\htm\product-v5.html
 wwwroot\htm\product-v6.html

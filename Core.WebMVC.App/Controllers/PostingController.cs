@@ -153,7 +153,8 @@ namespace DMMS.WebMVC.App.Controllers
             else if (HttpContext.Session.GetString("CompanyIdentity") == "184a261ff4944f0a9470ddfff292939f")
             {
                 //path = Path.Combine(_env.WebRootPath, "htm", "post_layout_classic_others.html");
-                path = Path.Combine(_env.WebRootPath, "htm", "post_layout_classic_uscpl.html");
+                //path = Path.Combine(_env.WebRootPath, "htm", "post_layout_classic_uscpl.html");
+                path = Path.Combine(_env.WebRootPath, "htm", "post_layout_classic_uscpl_blog.html");
             }
             string productHtml = System.IO.File.ReadAllText(path);
 

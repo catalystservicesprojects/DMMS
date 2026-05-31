@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DMMS.Models.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f88953b87306ef615a2f8288f75a5efe90e8fd47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc9a176672caaf99562496b3579144d2f7cd9579")]
 [assembly: System.Reflection.AssemblyProductAttribute("DMMS.Models.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DMMS.Models.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
