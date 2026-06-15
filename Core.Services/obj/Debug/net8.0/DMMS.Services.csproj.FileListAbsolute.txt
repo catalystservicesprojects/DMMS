@@ -34,3 +34,15 @@ D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Services\obj\Debug\
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Services\obj\Debug\net8.0\refint\DMMS.Services.dll
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Services\obj\Debug\net8.0\DMMS.Services.pdb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Services\obj\Debug\net8.0\ref\DMMS.Services.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\bin\Debug\net8.0\DMMS.Services.deps.json
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\bin\Debug\net8.0\DMMS.Services.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\bin\Debug\net8.0\DMMS.Services.pdb
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\DMMS.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\DMMS.Services.AssemblyInfoInputs.cache
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\DMMS.Services.AssemblyInfo.cs
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\DMMS.Services.csproj.CoreCompileInputs.cache
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\DMMS.Services.sourcelink.json
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\DMMS.Services.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\refint\DMMS.Services.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\DMMS.Services.pdb
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Services\obj\Debug\net8.0\ref\DMMS.Services.dll

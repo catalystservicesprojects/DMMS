@@ -805,6 +805,9 @@ namespace DMMS.WebMVC.App.Migrations
                     b.Property<string>("Link")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("LongTailKeywords")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ModifiedBy")
                         .HasColumnType("int");
 

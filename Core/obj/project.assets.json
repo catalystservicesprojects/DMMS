@@ -4709,23 +4709,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ninad\\.nuget\\packages\\": {},
+    "C:\\Users\\Catalyst Services\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gawankars\\Ninad\\Projects\\DMMS\\Core\\DMMS.csproj",
+      "projectUniqueName": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core\\DMMS.csproj",
       "projectName": "DMMS",
-      "projectPath": "D:\\Gawankars\\Ninad\\Projects\\DMMS\\Core\\DMMS.csproj",
-      "packagesPath": "C:\\Users\\ninad\\.nuget\\packages\\",
-      "outputPath": "D:\\Gawankars\\Ninad\\Projects\\DMMS\\Core\\obj\\",
+      "projectPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core\\DMMS.csproj",
+      "packagesPath": "C:\\Users\\Catalyst Services\\.nuget\\packages\\",
+      "outputPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ninad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Catalyst Services\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4753,7 +4753,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -4799,7 +4799,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

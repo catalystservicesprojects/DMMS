@@ -34,3 +34,15 @@ D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Repositories\obj\De
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\refint\DMMS.Repositories.dll
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\DMMS.Repositories.pdb
 D:\Gawankars\Ninad\Companies\CatalystTech\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\ref\DMMS.Repositories.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\bin\Debug\net8.0\DMMS.Repositories.deps.json
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\bin\Debug\net8.0\DMMS.Repositories.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\bin\Debug\net8.0\DMMS.Repositories.pdb
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\DMMS.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\DMMS.Repositories.AssemblyInfoInputs.cache
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\DMMS.Repositories.AssemblyInfo.cs
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\DMMS.Repositories.csproj.CoreCompileInputs.cache
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\DMMS.Repositories.sourcelink.json
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\DMMS.Repositories.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\refint\DMMS.Repositories.dll
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\DMMS.Repositories.pdb
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.Repositories\obj\Debug\net8.0\ref\DMMS.Repositories.dll

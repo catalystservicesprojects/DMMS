@@ -1,81 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{41370358-F92A-47D2-A60A-C5DC19C93CCF}|..\\Core.WebMVC.App\\DMMS.WebMVC.App.csproj|d:\\gawankars\\ninad\\companies\\catalyst services\\projects\\dmms\\core.webmvc.app\\controllers\\postingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41370358-F92A-47D2-A60A-C5DC19C93CCF}|..\\Core.WebMVC.App\\DMMS.WebMVC.App.csproj|d:\\gawankars\\ninad\\companies\\catalyst services\\projects\\dmms\\core.webmvc.app\\wwwroot\\htm\\post_layout_classic_uscpl_blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41370358-F92A-47D2-A60A-C5DC19C93CCF}|..\\Core.WebMVC.App\\DMMS.WebMVC.App.csproj|d:\\gawankars\\ninad\\companies\\catalyst services\\projects\\dmms\\core.webmvc.app\\views\\contents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F088CDA7-81AE-B399-3C85-3D6B0A096575}|..\\Core.Models\\DMMS.Models.csproj|d:\\gawankars\\ninad\\companies\\catalyst services\\projects\\dmms\\core.models\\contentmeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "post_layout_classic_uscpl_blog.html",
-              "DocumentMoniker": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.WebMVC.App\\wwwroot\\htm\\post_layout_classic_uscpl_blog.html",
-              "RelativeDocumentMoniker": "..\\Core.WebMVC.App\\wwwroot\\htm\\post_layout_classic_uscpl_blog.html",
-              "ToolTip": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.WebMVC.App\\wwwroot\\htm\\post_layout_classic_uscpl_blog.html",
-              "RelativeToolTip": "..\\Core.WebMVC.App\\wwwroot\\htm\\post_layout_classic_uscpl_blog.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-05-29T06:41:41.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PostingController.cs",
-              "DocumentMoniker": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.WebMVC.App\\Controllers\\PostingController.cs",
-              "RelativeDocumentMoniker": "..\\Core.WebMVC.App\\Controllers\\PostingController.cs",
-              "ToolTip": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.WebMVC.App\\Controllers\\PostingController.cs",
-              "RelativeToolTip": "..\\Core.WebMVC.App\\Controllers\\PostingController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T06:39:54.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.WebMVC.App\\Views\\Contents\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\Core.WebMVC.App\\Views\\Contents\\Index.cshtml",
-              "ToolTip": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.WebMVC.App\\Views\\Contents\\Index.cshtml",
-              "RelativeToolTip": "..\\Core.WebMVC.App\\Views\\Contents\\Index.cshtml",
-              "ViewState": "AgIAAO8AAAAAAAAAAAAAAPYAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T07:55:10.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContentMeta.cs",
-              "DocumentMoniker": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\ContentMeta.cs",
-              "RelativeDocumentMoniker": "..\\Core.Models\\ContentMeta.cs",
-              "ToolTip": "D:\\Gawankars\\Ninad\\Companies\\Catalyst Services\\Projects\\DMMS\\Core.Models\\ContentMeta.cs",
-              "RelativeToolTip": "..\\Core.Models\\ContentMeta.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T07:52:23.362Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

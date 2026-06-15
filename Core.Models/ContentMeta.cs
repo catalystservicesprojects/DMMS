@@ -22,6 +22,7 @@ namespace DMMS.Models
         public required string PrimaryKeyword { get; set; }
         public string? SecondaryKeywords { get; set; }
         public string? TertiaryKeywords { get; set; }
+        public string? LongTailKeywords { get; set; }
         public required string ShortName { get; set; }
         public string? Hook { get; set; }
         public string? HookSlug { get; set; }

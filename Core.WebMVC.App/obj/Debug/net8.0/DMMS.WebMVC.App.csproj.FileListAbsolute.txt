@@ -2390,8 +2390,8 @@ D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\obj\Debug
 D:\Gawankars\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\obj\Debug\net8.0\ref\DMMS.WebMVC.App.dll
 D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\bin\Debug\net8.0\appsettings.Development.json
 D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\bin\Debug\net8.0\appsettings.json
-D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\bin\Debug\net8.0\DMMS.WebMVC.App.staticwebassets.endpoints.json
 D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\bin\Debug\net8.0\DMMS.WebMVC.App.staticwebassets.runtime.json
+D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\bin\Debug\net8.0\DMMS.WebMVC.App.staticwebassets.endpoints.json
 D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\bin\Debug\net8.0\DMMS.WebMVC.App.exe
 D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\bin\Debug\net8.0\DMMS.WebMVC.App.deps.json
 D:\Gawankars\Ninad\Companies\Catalyst Services\Projects\DMMS\Core.WebMVC.App\bin\Debug\net8.0\DMMS.WebMVC.App.runtimeconfig.json
